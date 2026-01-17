@@ -1,0 +1,58 @@
+[
+  {
+    "program_name": "Selection Sort",
+    "description": "Sorts an array using Selection Sort algorithm",
+    "instruction": "How to Run:\nSave: SelectionSort.c\nCompile: gcc SelectionSort.c -o SelectionSort\nRun: ./SelectionSort",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {64, 25, 12, 22, 11};\n    int n = 5;\n\n    for (int i = 0; i < n - 1; i++) {\n        int minIndex = i;\n        for (int j = i + 1; j < n; j++) {\n            if (arr[j] < arr[minIndex]) {\n                minIndex = j;\n            }\n        }\n        int temp = arr[i];\n        arr[i] = arr[minIndex];\n        arr[minIndex] = temp;\n    }\n\n    printf(\"Sorted Array: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Sorted Array: 11 12 22 25 64"
+  },
+  {
+    "program_name": "Insertion Sort",
+    "description": "Sorts an array using Insertion Sort algorithm",
+    "instruction": "How to Run:\nSave: InsertionSort.c\nCompile: gcc InsertionSort.c -o InsertionSort\nRun: ./InsertionSort",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {12, 11, 13, 5, 6};\n    int n = 5;\n\n    for (int i = 1; i < n; i++) {\n        int key = arr[i];\n        int j = i - 1;\n\n        while (j >= 0 && arr[j] > key) {\n            arr[j + 1] = arr[j];\n            j--;\n        }\n        arr[j + 1] = key;\n    }\n\n    printf(\"Sorted Array: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Sorted Array: 5 6 11 12 13"
+  },
+  {
+    "program_name": "Merge Sort",
+    "description": "Sorts an array using Merge Sort algorithm (Divide and Conquer)",
+    "instruction": "How to Run:\nSave: MergeSort.c\nCompile: gcc MergeSort.c -o MergeSort\nRun: ./MergeSort",
+    "code": "#include <stdio.h>\n\nvoid merge(int arr[], int l, int m, int r) {\n    int n1 = m - l + 1;\n    int n2 = r - m;\n\n    int L[100], R[100];\n\n    for (int i = 0; i < n1; i++)\n        L[i] = arr[l + i];\n    for (int j = 0; j < n2; j++)\n        R[j] = arr[m + 1 + j];\n\n    int i = 0, j = 0, k = l;\n\n    while (i < n1 && j < n2) {\n        if (L[i] <= R[j]) {\n            arr[k] = L[i];\n            i++;\n        } else {\n            arr[k] = R[j];\n            j++;\n        }\n        k++;\n    }\n\n    while (i < n1) {\n        arr[k] = L[i];\n        i++;\n        k++;\n    }\n\n    while (j < n2) {\n        arr[k] = R[j];\n        j++;\n        k++;\n    }\n}\n\nvoid mergeSort(int arr[], int l, int r) {\n    if (l < r) {\n        int m = l + (r - l) / 2;\n\n        mergeSort(arr, l, m);\n        mergeSort(arr, m + 1, r);\n\n        merge(arr, l, m, r);\n    }\n}\n\nint main() {\n    int arr[] = {38, 27, 43, 3, 9, 82, 10};\n    int n = 7;\n\n    mergeSort(arr, 0, n - 1);\n\n    printf(\"Sorted Array: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Sorted Array: 3 9 10 27 38 43 82"
+  },
+  {
+    "program_name": "Quick Sort",
+    "description": "Sorts an array using Quick Sort algorithm",
+    "instruction": "How to Run:\nSave: QuickSort.c\nCompile: gcc QuickSort.c -o QuickSort\nRun: ./QuickSort",
+    "code": "#include <stdio.h>\n\nint partition(int arr[], int low, int high) {\n    int pivot = arr[high];\n    int i = low - 1;\n\n    for (int j = low; j < high; j++) {\n        if (arr[j] < pivot) {\n            i++;\n            int temp = arr[i];\n            arr[i] = arr[j];\n            arr[j] = temp;\n        }\n    }\n\n    int temp = arr[i + 1];\n    arr[i + 1] = arr[high];\n    arr[high] = temp;\n\n    return i + 1;\n}\n\nvoid quickSort(int arr[], int low, int high) {\n    if (low < high) {\n        int pi = partition(arr, low, high);\n\n        quickSort(arr, low, pi - 1);\n        quickSort(arr, pi + 1, high);\n    }\n}\n\nint main() {\n    int arr[] = {10, 7, 8, 9, 1, 5};\n    int n = 6;\n\n    quickSort(arr, 0, n - 1);\n\n    printf(\"Sorted Array: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Sorted Array: 1 5 7 8 9 10"
+  },
+  {
+    "program_name": "Singly Linked List - Create and Display",
+    "description": "Creates a singly linked list and displays elements",
+    "instruction": "How to Run:\nSave: LinkedListCreateDisplay.c\nCompile: gcc LinkedListCreateDisplay.c -o LinkedListCreateDisplay\nRun: ./LinkedListCreateDisplay",
+    "code": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Node {\n    int data;\n    struct Node *next;\n};\n\nint main() {\n    struct Node *head = NULL;\n    struct Node *second = NULL;\n    struct Node *third = NULL;\n\n    head = (struct Node *)malloc(sizeof(struct Node));\n    second = (struct Node *)malloc(sizeof(struct Node));\n    third = (struct Node *)malloc(sizeof(struct Node));\n\n    head->data = 10;\n    head->next = second;\n\n    second->data = 20;\n    second->next = third;\n\n    third->data = 30;\n    third->next = NULL;\n\n    struct Node *temp = head;\n    printf(\"Linked List: \");\n    while (temp != NULL) {\n        printf(\"%d \", temp->data);\n        temp = temp->next;\n    }\n\n    return 0;\n}",
+    "output": "Linked List: 10 20 30"
+  },
+  {
+    "program_name": "Stack Using Array (Push and Pop)",
+    "description": "Implements stack operations using array (push & pop)",
+    "instruction": "How to Run:\nSave: StackArray.c\nCompile: gcc StackArray.c -o StackArray\nRun: ./StackArray",
+    "code": "#include <stdio.h>\n\n#define MAX 5\n\nint stack[MAX];\nint top = -1;\n\nvoid push(int value) {\n    if (top == MAX - 1) {\n        printf(\"Stack Overflow\\n\");\n        return;\n    }\n    stack[++top] = value;\n    printf(\"Pushed: %d\\n\", value);\n}\n\nvoid pop() {\n    if (top == -1) {\n        printf(\"Stack Underflow\\n\");\n        return;\n    }\n    printf(\"Popped: %d\\n\", stack[top--]);\n}\n\nvoid display() {\n    if (top == -1) {\n        printf(\"Stack is empty\\n\");\n        return;\n    }\n    printf(\"Stack: \");\n    for (int i = top; i >= 0; i--) {\n        printf(\"%d \", stack[i]);\n    }\n    printf(\"\\n\");\n}\n\nint main() {\n    push(10);\n    push(20);\n    push(30);\n    display();\n    pop();\n    display();\n    return 0;\n}",
+    "output": "Pushed: 10\nPushed: 20\nPushed: 30\nStack: 30 20 10\nPopped: 30\nStack: 20 10"
+  },
+  {
+    "program_name": "Queue Using Array (Enqueue and Dequeue)",
+    "description": "Implements queue operations using array (enqueue & dequeue)",
+    "instruction": "How to Run:\nSave: QueueArray.c\nCompile: gcc QueueArray.c -o QueueArray\nRun: ./QueueArray",
+    "code": "#include <stdio.h>\n\n#define MAX 5\n\nint queue[MAX];\nint front = -1, rear = -1;\n\nvoid enqueue(int value) {\n    if (rear == MAX - 1) {\n        printf(\"Queue Overflow\\n\");\n        return;\n    }\n    if (front == -1) front = 0;\n    queue[++rear] = value;\n    printf(\"Enqueued: %d\\n\", value);\n}\n\nvoid dequeue() {\n    if (front == -1 || front > rear) {\n        printf(\"Queue Underflow\\n\");\n        return;\n    }\n    printf(\"Dequeued: %d\\n\", queue[front++]);\n}\n\nvoid display() {\n    if (front == -1 || front > rear) {\n        printf(\"Queue is empty\\n\");\n        return;\n    }\n    printf(\"Queue: \");\n    for (int i = front; i <= rear; i++) {\n        printf(\"%d \", queue[i]);\n    }\n    printf(\"\\n\");\n}\n\nint main() {\n    enqueue(10);\n    enqueue(20);\n    enqueue(30);\n    display();\n    dequeue();\n    display();\n    return 0;\n}",
+    "output": "Enqueued: 10\nEnqueued: 20\nEnqueued: 30\nQueue: 10 20 30\nDequeued: 10\nQueue: 20 30"
+  },
+  {
+    "program_name": "Mini Project - ATM Simulation (Basic)",
+    "description": "Simple ATM simulation using switch-case",
+    "instruction": "How to Run:\nSave: ATMSimulation.c\nCompile: gcc ATMSimulation.c -o ATMSimulation\nRun: ./ATMSimulation",
+    "code": "#include <stdio.h>\n\nint main() {\n    int choice;\n    double balance = 10000;\n    double amount;\n\n    printf(\"ATM MENU\\n\");\n    printf(\"1. Check Balance\\n\");\n    printf(\"2. Deposit\\n\");\n    printf(\"3. Withdraw\\n\");\n\n    printf(\"Enter choice: \");\n    scanf(\"%d\", &choice);\n\n    switch (choice) {\n        case 1:\n            printf(\"Balance = %.2f\\n\", balance);\n            break;\n\n        case 2:\n            printf(\"Enter deposit amount: \");\n            scanf(\"%lf\", &amount);\n            balance += amount;\n            printf(\"New Balance = %.2f\\n\", balance);\n            break;\n\n        case 3:\n            printf(\"Enter withdraw amount: \");\n            scanf(\"%lf\", &amount);\n            if (amount <= balance) {\n                balance -= amount;\n                printf(\"Withdraw Successful! New Balance = %.2f\\n\", balance);\n            } else {\n                printf(\"Insufficient Balance\\n\");\n            }\n            break;\n\n        default:\n            printf(\"Invalid Choice\\n\");\n    }\n\n    return 0;\n}",
+    "output": "ATM MENU\n1. Check Balance\n2. Deposit\n3. Withdraw\nEnter choice: 1\nBalance = 10000.00"
+  }
+]
