@@ -1,0 +1,100 @@
+[
+  {
+    "program_name": "Find Largest Element in Array",
+    "description": "Finds the largest element in an integer array",
+    "instruction": "How to Run:\nSave: LargestInArray.c\nCompile: gcc LargestInArray.c -o LargestInArray\nRun: ./LargestInArray",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 50, 30, 90, 40};\n    int n = 5;\n    int max = arr[0];\n\n    for (int i = 1; i < n; i++) {\n        if (arr[i] > max)\n            max = arr[i];\n    }\n\n    printf(\"Largest = %d\\n\", max);\n    return 0;\n}",
+    "output": "Largest = 90"
+  },
+  {
+    "program_name": "Find Smallest Element in Array",
+    "description": "Finds the smallest element in an integer array",
+    "instruction": "How to Run:\nSave: SmallestInArray.c\nCompile: gcc SmallestInArray.c -o SmallestInArray\nRun: ./SmallestInArray",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 50, 30, 90, 40};\n    int n = 5;\n    int min = arr[0];\n\n    for (int i = 1; i < n; i++) {\n        if (arr[i] < min)\n            min = arr[i];\n    }\n\n    printf(\"Smallest = %d\\n\", min);\n    return 0;\n}",
+    "output": "Smallest = 10"
+  },
+  {
+    "program_name": "Sum of Array Elements",
+    "description": "Calculates sum of elements of an array",
+    "instruction": "How to Run:\nSave: SumArray.c\nCompile: gcc SumArray.c -o SumArray\nRun: ./SumArray",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15};\n    int n = 3;\n    int sum = 0;\n\n    for (int i = 0; i < n; i++) {\n        sum += arr[i];\n    }\n\n    printf(\"Sum = %d\\n\", sum);\n    return 0;\n}",
+    "output": "Sum = 30"
+  },
+  {
+    "program_name": "Reverse Array",
+    "description": "Prints elements of an array in reverse order",
+    "instruction": "How to Run:\nSave: ReverseArray.c\nCompile: gcc ReverseArray.c -o ReverseArray\nRun: ./ReverseArray",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    int n = 5;\n\n    printf(\"Reverse Array: \");\n    for (int i = n - 1; i >= 0; i--) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Reverse Array: 5 4 3 2 1"
+  },
+  {
+    "program_name": "Array Sorting (Bubble Sort)",
+    "description": "Sorts an array using bubble sort algorithm",
+    "instruction": "How to Run:\nSave: BubbleSort.c\nCompile: gcc BubbleSort.c -o BubbleSort\nRun: ./BubbleSort",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 1, 4, 2, 3};\n    int n = 5;\n\n    for (int i = 0; i < n - 1; i++) {\n        for (int j = 0; j < n - 1 - i; j++) {\n            if (arr[j] > arr[j + 1]) {\n                int temp = arr[j];\n                arr[j] = arr[j + 1];\n                arr[j + 1] = temp;\n            }\n        }\n    }\n\n    printf(\"Sorted Array: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n\n    return 0;\n}",
+    "output": "Sorted Array: 1 2 3 4 5"
+  },
+  {
+    "program_name": "Linear Search in Array",
+    "description": "Searches an element using linear search",
+    "instruction": "How to Run:\nSave: LinearSearch.c\nCompile: gcc LinearSearch.c -o LinearSearch\nRun: ./LinearSearch",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    int n = 5;\n    int key = 40;\n    int found = -1;\n\n    for (int i = 0; i < n; i++) {\n        if (arr[i] == key) {\n            found = i;\n            break;\n        }\n    }\n\n    if (found != -1)\n        printf(\"Found at index: %d\\n\", found);\n    else\n        printf(\"Not Found\\n\");\n\n    return 0;\n}",
+    "output": "Found at index: 3"
+  },
+  {
+    "program_name": "Binary Search in Array",
+    "description": "Searches an element using binary search in sorted array",
+    "instruction": "How to Run:\nSave: BinarySearch.c\nCompile: gcc BinarySearch.c -o BinarySearch\nRun: ./BinarySearch",
+    "code": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15, 20, 25, 30};\n    int n = 6;\n    int key = 20;\n\n    int low = 0, high = n - 1, mid;\n    int found = -1;\n\n    while (low <= high) {\n        mid = (low + high) / 2;\n\n        if (arr[mid] == key) {\n            found = mid;\n            break;\n        } else if (arr[mid] < key) {\n            low = mid + 1;\n        } else {\n            high = mid - 1;\n        }\n    }\n\n    if (found != -1)\n        printf(\"Found at index: %d\\n\", found);\n    else\n        printf(\"Not Found\\n\");\n\n    return 0;\n}",
+    "output": "Found at index: 3"
+  },
+  {
+    "program_name": "String Length (Without strlen)",
+    "description": "Finds length of a string without using strlen()",
+    "instruction": "How to Run:\nSave: StringLength.c\nCompile: gcc StringLength.c -o StringLength\nRun: ./StringLength",
+    "code": "#include <stdio.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    int length = 0;\n\n    while (str[length] != '\\0') {\n        length++;\n    }\n\n    printf(\"Length = %d\\n\", length);\n    return 0;\n}",
+    "output": "Length = 13"
+  },
+  {
+    "program_name": "Reverse a String",
+    "description": "Reverses a string without using built-in function",
+    "instruction": "How to Run:\nSave: ReverseString.c\nCompile: gcc ReverseString.c -o ReverseString\nRun: ./ReverseString",
+    "code": "#include <stdio.h>\n\nint main() {\n    char str[] = \"hello\";\n    int len = 0;\n\n    while (str[len] != '\\0') {\n        len++;\n    }\n\n    printf(\"Reverse = \");\n    for (int i = len - 1; i >= 0; i--) {\n        printf(\"%c\", str[i]);\n    }\n\n    printf(\"\\n\");\n    return 0;\n}",
+    "output": "Reverse = olleh"
+  },
+  {
+    "program_name": "Palindrome String Check",
+    "description": "Checks whether a string is palindrome",
+    "instruction": "How to Run:\nSave: PalindromeString.c\nCompile: gcc PalindromeString.c -o PalindromeString\nRun: ./PalindromeString",
+    "code": "#include <stdio.h>\n\nint main() {\n    char str[] = \"madam\";\n    int len = 0;\n\n    while (str[len] != '\\0') {\n        len++;\n    }\n\n    int start = 0;\n    int end = len - 1;\n    int isPalindrome = 1;\n\n    while (start < end) {\n        if (str[start] != str[end]) {\n            isPalindrome = 0;\n            break;\n        }\n        start++;\n        end--;\n    }\n\n    if (isPalindrome)\n        printf(\"Palindrome String\\n\");\n    else\n        printf(\"Not Palindrome\\n\");\n\n    return 0;\n}",
+    "output": "Palindrome String"
+  },
+  {
+    "program_name": "Count Vowels and Consonants in String",
+    "description": "Counts vowels and consonants in a string",
+    "instruction": "How to Run:\nSave: CountVowelsConsonants.c\nCompile: gcc CountVowelsConsonants.c -o CountVowelsConsonants\nRun: ./CountVowelsConsonants",
+    "code": "#include <stdio.h>\n\nint main() {\n    char str[] = \"programming\";\n    int vowels = 0, consonants = 0;\n\n    for (int i = 0; str[i] != '\\0'; i++) {\n        char ch = str[i];\n\n        if (ch >= 'A' && ch <= 'Z') ch = ch + 32;\n\n        if (ch >= 'a' && ch <= 'z') {\n            if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')\n                vowels++;\n            else\n                consonants++;\n        }\n    }\n\n    printf(\"Vowels = %d\\n\", vowels);\n    printf(\"Consonants = %d\\n\", consonants);\n\n    return 0;\n}",
+    "output": "Vowels = 3\nConsonants = 8"
+  },
+  {
+    "program_name": "Function Example (Add Two Numbers)",
+    "description": "Uses a function to add two numbers and return result",
+    "instruction": "How to Run:\nSave: FunctionAdd.c\nCompile: gcc FunctionAdd.c -o FunctionAdd\nRun: ./FunctionAdd",
+    "code": "#include <stdio.h>\n\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    int result = add(10, 20);\n    printf(\"Sum = %d\\n\", result);\n    return 0;\n}",
+    "output": "Sum = 30"
+  },
+  {
+    "program_name": "Recursion Example (Factorial)",
+    "description": "Calculates factorial using recursion",
+    "instruction": "How to Run:\nSave: FactorialRecursion.c\nCompile: gcc FactorialRecursion.c -o FactorialRecursion\nRun: ./FactorialRecursion",
+    "code": "#include <stdio.h>\n\nlong factorial(int n) {\n    if (n == 0 || n == 1)\n        return 1;\n    return n * factorial(n - 1);\n}\n\nint main() {\n    int n = 5;\n    printf(\"Factorial = %ld\\n\", factorial(n));\n    return 0;\n}",
+    "output": "Factorial = 120"
+  },
+  {
+    "program_name": "Pyramid Star Pattern",
+    "description": "Prints pyramid pattern using nested loops",
+    "instruction": "How to Run:\nSave: PyramidPattern.c\nCompile: gcc PyramidPattern.c -o PyramidPattern\nRun: ./PyramidPattern",
+    "code": "#include <stdio.h>\n\nint main() {\n    int n = 5;\n\n    for (int i = 1; i <= n; i++) {\n        for (int sp = 1; sp <= n - i; sp++)\n            printf(\" \");\n\n        for (int st = 1; st <= (2 * i - 1); st++)\n            printf(\"*\");\n\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+    "output": "    *\n   ***\n  *****\n *******\n*********"
+  }
+]
