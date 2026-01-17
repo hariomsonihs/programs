@@ -1,0 +1,221 @@
+```json
+[
+  {
+    "program_name": "Read Input (All Data Types) Using Scanner",
+    "description": "Takes multiple types of input (int, double, char, String) using Scanner class",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ReadInputAllTypes.java).\nCompile: javac ReadInputAllTypes.java\nRun: java ReadInputAllTypes",
+    "code": "import java.util.Scanner;\n\npublic class ReadInputAllTypes {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter an integer: \");\n        int a = sc.nextInt();\n\n        System.out.print(\"Enter a double: \");\n        double b = sc.nextDouble();\n\n        System.out.print(\"Enter a character: \");\n        char ch = sc.next().charAt(0);\n\n        sc.nextLine();\n        System.out.print(\"Enter a full line string: \");\n        String line = sc.nextLine();\n\n        System.out.println(\"Integer = \" + a);\n        System.out.println(\"Double = \" + b);\n        System.out.println(\"Character = \" + ch);\n        System.out.println(\"String = \" + line);\n\n        sc.close();\n    }\n}",
+    "output": "Enter an integer: 10\nEnter a double: 12.5\nEnter a character: A\nEnter a full line string: Hello Java\nInteger = 10\nDouble = 12.5\nCharacter = A\nString = Hello Java"
+  },
+  {
+    "program_name": "Arithmetic Operations Using Scanner",
+    "description": "Performs addition, subtraction, multiplication, and division on two numbers",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ArithmeticOperations.java).\nCompile: javac ArithmeticOperations.java\nRun: java ArithmeticOperations",
+    "code": "import java.util.Scanner;\n\npublic class ArithmeticOperations {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter first number: \");\n        double a = sc.nextDouble();\n\n        System.out.print(\"Enter second number: \");\n        double b = sc.nextDouble();\n\n        System.out.println(\"Sum = \" + (a + b));\n        System.out.println(\"Difference = \" + (a - b));\n        System.out.println(\"Product = \" + (a * b));\n\n        if (b != 0) {\n            System.out.println(\"Quotient = \" + (a / b));\n        } else {\n            System.out.println(\"Quotient = Cannot divide by zero\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter first number: 20\nEnter second number: 4\nSum = 24.0\nDifference = 16.0\nProduct = 80.0\nQuotient = 5.0"
+  },
+  {
+    "program_name": "Multiply Floating Point Numbers",
+    "description": "Multiplies two floating point values entered by the user",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., MultiplyFloat.java).\nCompile: javac MultiplyFloat.java\nRun: java MultiplyFloat",
+    "code": "import java.util.Scanner;\n\npublic class MultiplyFloat {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter first decimal number: \");\n        float a = sc.nextFloat();\n\n        System.out.print(\"Enter second decimal number: \");\n        float b = sc.nextFloat();\n\n        float product = a * b;\n        System.out.println(\"Product = \" + product);\n\n        sc.close();\n    }\n}",
+    "output": "Enter first decimal number: 2.5\nEnter second decimal number: 4.0\nProduct = 10.0"
+  },
+  {
+    "program_name": "Quotient and Remainder",
+    "description": "Calculates quotient and remainder of two integers using / and % operators",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., QuotientRemainder.java).\nCompile: javac QuotientRemainder.java\nRun: java QuotientRemainder",
+    "code": "import java.util.Scanner;\n\npublic class QuotientRemainder {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter dividend: \");\n        int a = sc.nextInt();\n\n        System.out.print(\"Enter divisor: \");\n        int b = sc.nextInt();\n\n        if (b != 0) {\n            System.out.println(\"Quotient = \" + (a / b));\n            System.out.println(\"Remainder = \" + (a % b));\n        } else {\n            System.out.println(\"Division by zero is not allowed\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter dividend: 17\nEnter divisor: 5\nQuotient = 3\nRemainder = 2"
+  },
+  {
+    "program_name": "Compound Interest",
+    "description": "Calculates compound interest using formula A = P*(1 + R/100)^T and CI = A - P",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CompoundInterest.java).\nCompile: javac CompoundInterest.java\nRun: java CompoundInterest",
+    "code": "import java.util.Scanner;\n\npublic class CompoundInterest {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter Principal (P): \");\n        double p = sc.nextDouble();\n\n        System.out.print(\"Enter Rate (R): \");\n        double r = sc.nextDouble();\n\n        System.out.print(\"Enter Time (T in years): \");\n        double t = sc.nextDouble();\n\n        double amount = p * Math.pow((1 + r / 100), t);\n        double ci = amount - p;\n\n        System.out.println(\"Amount = \" + amount);\n        System.out.println(\"Compound Interest = \" + ci);\n\n        sc.close();\n    }\n}",
+    "output": "Enter Principal (P): 10000\nEnter Rate (R): 5\nEnter Time (T in years): 2\nAmount = 11025.0\nCompound Interest = 1025.0"
+  },
+  {
+    "program_name": "Perimeter of Rectangle",
+    "description": "Calculates perimeter of a rectangle using 2*(L+W)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PerimeterRectangle.java).\nCompile: javac PerimeterRectangle.java\nRun: java PerimeterRectangle",
+    "code": "import java.util.Scanner;\n\npublic class PerimeterRectangle {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter length: \");\n        double l = sc.nextDouble();\n\n        System.out.print(\"Enter width: \");\n        double w = sc.nextDouble();\n\n        double perimeter = 2 * (l + w);\n        System.out.println(\"Perimeter = \" + perimeter);\n\n        sc.close();\n    }\n}",
+    "output": "Enter length: 10\nEnter width: 5\nPerimeter = 30.0"
+  },
+  {
+    "program_name": "Square and Cube of a Number",
+    "description": "Calculates square and cube of a given number",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SquareCube.java).\nCompile: javac SquareCube.java\nRun: java SquareCube",
+    "code": "import java.util.Scanner;\n\npublic class SquareCube {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int n = sc.nextInt();\n\n        System.out.println(\"Square = \" + (n * n));\n        System.out.println(\"Cube = \" + (n * n * n));\n\n        sc.close();\n    }\n}",
+    "output": "Enter a number: 5\nSquare = 25\nCube = 125"
+  },
+  {
+    "program_name": "Celsius to Fahrenheit",
+    "description": "Converts temperature from Celsius to Fahrenheit using F = (C*9/5) + 32",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CelsiusToFahrenheit.java).\nCompile: javac CelsiusToFahrenheit.java\nRun: java CelsiusToFahrenheit",
+    "code": "import java.util.Scanner;\n\npublic class CelsiusToFahrenheit {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter temperature in Celsius: \");\n        double c = sc.nextDouble();\n\n        double f = (c * 9 / 5) + 32;\n        System.out.println(\"Fahrenheit = \" + f);\n\n        sc.close();\n    }\n}",
+    "output": "Enter temperature in Celsius: 25\nFahrenheit = 77.0"
+  },
+  {
+    "program_name": "Area of Triangle (Base & Height)",
+    "description": "Calculates area of triangle using (base*height)/2",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AreaTriangleBaseHeight.java).\nCompile: javac AreaTriangleBaseHeight.java\nRun: java AreaTriangleBaseHeight",
+    "code": "import java.util.Scanner;\n\npublic class AreaTriangleBaseHeight {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter base: \");\n        double base = sc.nextDouble();\n\n        System.out.print(\"Enter height: \");\n        double height = sc.nextDouble();\n\n        double area = (base * height) / 2;\n        System.out.println(\"Area = \" + area);\n\n        sc.close();\n    }\n}",
+    "output": "Enter base: 10\nEnter height: 6\nArea = 30.0"
+  },
+  {
+    "program_name": "Area of Triangle (Heron's Formula)",
+    "description": "Calculates area using Heron's formula sqrt(s*(s-a)*(s-b)*(s-c))",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., HeronTriangleArea.java).\nCompile: javac HeronTriangleArea.java\nRun: java HeronTriangleArea",
+    "code": "import java.util.Scanner;\n\npublic class HeronTriangleArea {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter side a: \");\n        double a = sc.nextDouble();\n\n        System.out.print(\"Enter side b: \");\n        double b = sc.nextDouble();\n\n        System.out.print(\"Enter side c: \");\n        double c = sc.nextDouble();\n\n        double s = (a + b + c) / 2;\n        double area = Math.sqrt(s * (s - a) * (s - b) * (s - c));\n\n        System.out.println(\"Area = \" + area);\n        sc.close();\n    }\n}",
+    "output": "Enter side a: 3\nEnter side b: 4\nEnter side c: 5\nArea = 6.0"
+  },
+  {
+    "program_name": "Power of a Number (Using Loop)",
+    "description": "Calculates a^b using loop multiplication",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PowerLoop.java).\nCompile: javac PowerLoop.java\nRun: java PowerLoop",
+    "code": "import java.util.Scanner;\n\npublic class PowerLoop {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter base: \");\n        int base = sc.nextInt();\n\n        System.out.print(\"Enter exponent: \");\n        int exp = sc.nextInt();\n\n        long result = 1;\n        for (int i = 1; i <= exp; i++) {\n            result *= base;\n        }\n\n        System.out.println(\"Result = \" + result);\n        sc.close();\n    }\n}",
+    "output": "Enter base: 2\nEnter exponent: 5\nResult = 32"
+  },
+  {
+    "program_name": "Power of a Number (Using Math.pow)",
+    "description": "Calculates a^b using Math.pow() function",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PowerMathPow.java).\nCompile: javac PowerMathPow.java\nRun: java PowerMathPow",
+    "code": "import java.util.Scanner;\n\npublic class PowerMathPow {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter base: \");\n        double base = sc.nextDouble();\n\n        System.out.print(\"Enter exponent: \");\n        double exp = sc.nextDouble();\n\n        double result = Math.pow(base, exp);\n        System.out.println(\"Result = \" + result);\n\n        sc.close();\n    }\n}",
+    "output": "Enter base: 3\nEnter exponent: 4\nResult = 81.0"
+  },
+  {
+    "program_name": "Vowel or Consonant",
+    "description": "Checks whether a character is vowel or consonant using if-else",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., VowelConsonant.java).\nCompile: javac VowelConsonant.java\nRun: java VowelConsonant",
+    "code": "import java.util.Scanner;\n\npublic class VowelConsonant {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a character: \");\n        char ch = sc.next().toLowerCase().charAt(0);\n\n        if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {\n            System.out.println(\"Vowel\");\n        } else {\n            System.out.println(\"Consonant\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter a character: a\nVowel"
+  },
+  {
+    "program_name": "Leap Year Check",
+    "description": "Checks whether a year is leap year or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., LeapYear.java).\nCompile: javac LeapYear.java\nRun: java LeapYear",
+    "code": "import java.util.Scanner;\n\npublic class LeapYear {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter year: \");\n        int year = sc.nextInt();\n\n        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {\n            System.out.println(\"Leap Year\");\n        } else {\n            System.out.println(\"Not a Leap Year\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter year: 2024\nLeap Year"
+  },
+  {
+    "program_name": "Positive, Negative or Zero",
+    "description": "Checks whether a number is positive, negative or zero",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PositiveNegativeZero.java).\nCompile: javac PositiveNegativeZero.java\nRun: java PositiveNegativeZero",
+    "code": "import java.util.Scanner;\n\npublic class PositiveNegativeZero {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int num = sc.nextInt();\n\n        if (num > 0) {\n            System.out.println(\"Positive\");\n        } else if (num < 0) {\n            System.out.println(\"Negative\");\n        } else {\n            System.out.println(\"Zero\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter a number: -5\nNegative"
+  },
+  {
+    "program_name": "Alphabet Check",
+    "description": "Checks if entered character is an alphabet or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AlphabetCheck.java).\nCompile: javac AlphabetCheck.java\nRun: java AlphabetCheck",
+    "code": "import java.util.Scanner;\n\npublic class AlphabetCheck {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a character: \");\n        char ch = sc.next().charAt(0);\n\n        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {\n            System.out.println(\"Alphabet\");\n        } else {\n            System.out.println(\"Not an Alphabet\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter a character: 9\nNot an Alphabet"
+  },
+  {
+    "program_name": "Factorial (Using Recursion)",
+    "description": "Calculates factorial of a number using recursion method",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FactorialRecursion.java).\nCompile: javac FactorialRecursion.java\nRun: java FactorialRecursion",
+    "code": "import java.util.Scanner;\n\npublic class FactorialRecursion {\n    static long factorial(int n) {\n        if (n == 0 || n == 1) return 1;\n        return n * factorial(n - 1);\n    }\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int n = sc.nextInt();\n\n        System.out.println(\"Factorial = \" + factorial(n));\n        sc.close();\n    }\n}",
+    "output": "Enter a number: 5\nFactorial = 120"
+  },
+  {
+    "program_name": "Armstrong Number Check",
+    "description": "Checks whether a number is Armstrong number or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ArmstrongNumber.java).\nCompile: javac ArmstrongNumber.java\nRun: java ArmstrongNumber",
+    "code": "import java.util.Scanner;\n\npublic class ArmstrongNumber {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int num = sc.nextInt();\n\n        int original = num;\n        int digits = 0;\n        int temp = num;\n\n        while (temp != 0) {\n            digits++;\n            temp /= 10;\n        }\n\n        int sum = 0;\n        temp = num;\n        while (temp != 0) {\n            int digit = temp % 10;\n            sum += (int) Math.pow(digit, digits);\n            temp /= 10;\n        }\n\n        if (sum == original) {\n            System.out.println(\"Armstrong Number\");\n        } else {\n            System.out.println(\"Not Armstrong Number\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter a number: 153\nArmstrong Number"
+  },
+  {
+    "program_name": "GCD and LCM",
+    "description": "Finds GCD and LCM of two numbers using Euclidean algorithm",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., GcdLcm.java).\nCompile: javac GcdLcm.java\nRun: java GcdLcm",
+    "code": "import java.util.Scanner;\n\npublic class GcdLcm {\n    static int gcd(int a, int b) {\n        while (b != 0) {\n            int temp = b;\n            b = a % b;\n            a = temp;\n        }\n        return a;\n    }\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter first number: \");\n        int a = sc.nextInt();\n\n        System.out.print(\"Enter second number: \");\n        int b = sc.nextInt();\n\n        int g = gcd(a, b);\n        int lcm = (a * b) / g;\n\n        System.out.println(\"GCD = \" + g);\n        System.out.println(\"LCM = \" + lcm);\n\n        sc.close();\n    }\n}",
+    "output": "Enter first number: 12\nEnter second number: 18\nGCD = 6\nLCM = 36"
+  },
+  {
+    "program_name": "Neon Number Check",
+    "description": "Checks whether a number is Neon number or not (sum of digits of square equals number)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., NeonNumber.java).\nCompile: javac NeonNumber.java\nRun: java NeonNumber",
+    "code": "import java.util.Scanner;\n\npublic class NeonNumber {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number: \");\n        int num = sc.nextInt();\n\n        int square = num * num;\n        int sum = 0;\n\n        while (square != 0) {\n            sum += square % 10;\n            square /= 10;\n        }\n\n        if (sum == num) {\n            System.out.println(\"Neon Number\");\n        } else {\n            System.out.println(\"Not Neon Number\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter a number: 9\nNeon Number"
+  },
+  {
+    "program_name": "Diamond Pattern",
+    "description": "Prints a diamond shape star pattern using loops",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DiamondPattern.java).\nCompile: javac DiamondPattern.java\nRun: java DiamondPattern",
+    "code": "import java.util.Scanner;\n\npublic class DiamondPattern {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter number of rows (half): \");\n        int n = sc.nextInt();\n\n        for (int i = 1; i <= n; i++) {\n            for (int sp = 1; sp <= n - i; sp++) System.out.print(\" \");\n            for (int st = 1; st <= (2 * i - 1); st++) System.out.print(\"*\");\n            System.out.println();\n        }\n\n        for (int i = n - 1; i >= 1; i--) {\n            for (int sp = 1; sp <= n - i; sp++) System.out.print(\" \");\n            for (int st = 1; st <= (2 * i - 1); st++) System.out.print(\"*\");\n            System.out.println();\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter number of rows (half): 4\n   *\n  ***\n *****\n*******\n *****\n  ***\n   *"
+  },
+  {
+    "program_name": "Pascal's Triangle",
+    "description": "Prints Pascal's Triangle (binomial coefficients) using loops",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PascalsTriangle.java).\nCompile: javac PascalsTriangle.java\nRun: java PascalsTriangle",
+    "code": "import java.util.Scanner;\n\npublic class PascalsTriangle {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter number of rows: \");\n        int rows = sc.nextInt();\n\n        for (int i = 0; i < rows; i++) {\n            int num = 1;\n            for (int sp = 0; sp < rows - i; sp++) {\n                System.out.print(\" \");\n            }\n            for (int j = 0; j <= i; j++) {\n                System.out.print(num + \" \");\n                num = num * (i - j) / (j + 1);\n            }\n            System.out.println();\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter number of rows: 5\n     1 \n    1 1 \n   1 2 1 \n  1 3 3 1 \n 1 4 6 4 1"
+  },
+  {
+    "program_name": "Floyd's Triangle",
+    "description": "Prints Floyd's Triangle with natural numbers in triangle form",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FloydTriangle.java).\nCompile: javac FloydTriangle.java\nRun: java FloydTriangle",
+    "code": "import java.util.Scanner;\n\npublic class FloydTriangle {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter number of rows: \");\n        int n = sc.nextInt();\n\n        int num = 1;\n        for (int i = 1; i <= n; i++) {\n            for (int j = 1; j <= i; j++) {\n                System.out.print(num + \" \");\n                num++;\n            }\n            System.out.println();\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter number of rows: 4\n1 \n2 3 \n4 5 6 \n7 8 9 10"
+  },
+  {
+    "program_name": "Count Vowels and Consonants",
+    "description": "Counts vowels and consonants in a given string",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CountVowelsConsonants.java).\nCompile: javac CountVowelsConsonants.java\nRun: java CountVowelsConsonants",
+    "code": "import java.util.Scanner;\n\npublic class CountVowelsConsonants {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a string: \");\n        String s = sc.nextLine().toLowerCase();\n\n        int vowels = 0;\n        int consonants = 0;\n\n        for (int i = 0; i < s.length(); i++) {\n            char ch = s.charAt(i);\n            if (ch >= 'a' && ch <= 'z') {\n                if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u') {\n                    vowels++;\n                } else {\n                    consonants++;\n                }\n            }\n        }\n\n        System.out.println(\"Vowels = \" + vowels);\n        System.out.println(\"Consonants = \" + consonants);\n\n        sc.close();\n    }\n}",
+    "output": "Enter a string: programming\nVowels = 3\nConsonants = 8"
+  },
+  {
+    "program_name": "Anagram Check",
+    "description": "Checks whether two strings are anagrams or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AnagramCheck.java).\nCompile: javac AnagramCheck.java\nRun: java AnagramCheck",
+    "code": "import java.util.Arrays;\nimport java.util.Scanner;\n\npublic class AnagramCheck {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter first string: \");\n        String s1 = sc.nextLine().replaceAll(\"\\\\s\", \"\").toLowerCase();\n\n        System.out.print(\"Enter second string: \");\n        String s2 = sc.nextLine().replaceAll(\"\\\\s\", \"\").toLowerCase();\n\n        if (s1.length() != s2.length()) {\n            System.out.println(\"Not Anagram\");\n            sc.close();\n            return;\n        }\n\n        char[] a1 = s1.toCharArray();\n        char[] a2 = s2.toCharArray();\n\n        Arrays.sort(a1);\n        Arrays.sort(a2);\n\n        if (Arrays.equals(a1, a2)) {\n            System.out.println(\"Anagram\");\n        } else {\n            System.out.println(\"Not Anagram\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter first string: listen\nEnter second string: silent\nAnagram"
+  },
+  {
+    "program_name": "Bubble Sort (Array Sorting)",
+    "description": "Sorts an array using Bubble Sort algorithm",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., BubbleSortDemo.java).\nCompile: javac BubbleSortDemo.java\nRun: java BubbleSortDemo",
+    "code": "import java.util.Scanner;\n\npublic class BubbleSortDemo {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter size of array: \");\n        int n = sc.nextInt();\n\n        int[] arr = new int[n];\n        System.out.println(\"Enter array elements:\");\n        for (int i = 0; i < n; i++) {\n            arr[i] = sc.nextInt();\n        }\n\n        for (int i = 0; i < n - 1; i++) {\n            for (int j = 0; j < n - 1 - i; j++) {\n                if (arr[j] > arr[j + 1]) {\n                    int temp = arr[j];\n                    arr[j] = arr[j + 1];\n                    arr[j + 1] = temp;\n                }\n            }\n        }\n\n        System.out.print(\"Sorted Array: \");\n        for (int x : arr) {\n            System.out.print(x + \" \");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter size of array: 5\nEnter array elements:\n5 1 4 2 3\nSorted Array: 1 2 3 4 5"
+  },
+  {
+    "program_name": "Linear Search",
+    "description": "Searches an element in an array using Linear Search",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., LinearSearch.java).\nCompile: javac LinearSearch.java\nRun: java LinearSearch",
+    "code": "import java.util.Scanner;\n\npublic class LinearSearch {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        int[] arr = {10, 20, 30, 40, 50};\n\n        System.out.print(\"Enter element to search: \");\n        int key = sc.nextInt();\n\n        int index = -1;\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] == key) {\n                index = i;\n                break;\n            }\n        }\n\n        if (index != -1) {\n            System.out.println(\"Found at index: \" + index);\n        } else {\n            System.out.println(\"Not Found\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter element to search: 40\nFound at index: 3"
+  },
+  {
+    "program_name": "Binary Search",
+    "description": "Searches an element in a sorted array using Binary Search algorithm",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., BinarySearchDemo.java).\nCompile: javac BinarySearchDemo.java\nRun: java BinarySearchDemo",
+    "code": "import java.util.Scanner;\n\npublic class BinarySearchDemo {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        int[] arr = {5, 10, 15, 20, 25, 30};\n\n        System.out.print(\"Enter element to search: \");\n        int key = sc.nextInt();\n\n        int low = 0, high = arr.length - 1;\n        int index = -1;\n\n        while (low <= high) {\n            int mid = (low + high) / 2;\n\n            if (arr[mid] == key) {\n                index = mid;\n                break;\n            } else if (arr[mid] < key) {\n                low = mid + 1;\n            } else {\n                high = mid - 1;\n            }\n        }\n\n        if (index != -1) {\n            System.out.println(\"Found at index: \" + index);\n        } else {\n            System.out.println(\"Not Found\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter element to search: 20\nFound at index: 3"
+  },
+  {
+    "program_name": "Transpose of Matrix",
+    "description": "Calculates transpose of a matrix (rows become columns)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., MatrixTranspose.java).\nCompile: javac MatrixTranspose.java\nRun: java MatrixTranspose",
+    "code": "import java.util.Scanner;\n\npublic class MatrixTranspose {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter rows: \");\n        int r = sc.nextInt();\n\n        System.out.print(\"Enter columns: \");\n        int c = sc.nextInt();\n\n        int[][] matrix = new int[r][c];\n        System.out.println(\"Enter matrix elements:\");\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                matrix[i][j] = sc.nextInt();\n            }\n        }\n\n        System.out.println(\"Transpose:\");\n        for (int j = 0; j < c; j++) {\n            for (int i = 0; i < r; i++) {\n                System.out.print(matrix[i][j] + \" \");\n            }\n            System.out.println();\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter rows: 2\nEnter columns: 3\nEnter matrix elements:\n1 2 3\n4 5 6\nTranspose:\n1 4\n2 5\n3 6"
+  },
+  {
+    "program_name": "Matrix Addition",
+    "description": "Adds two matrices of same size",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., MatrixAddition.java).\nCompile: javac MatrixAddition.java\nRun: java MatrixAddition",
+    "code": "import java.util.Scanner;\n\npublic class MatrixAddition {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter rows: \");\n        int r = sc.nextInt();\n\n        System.out.print(\"Enter columns: \");\n        int c = sc.nextInt();\n\n        int[][] a = new int[r][c];\n        int[][] b = new int[r][c];\n\n        System.out.println(\"Enter first matrix:\");\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                a[i][j] = sc.nextInt();\n            }\n        }\n\n        System.out.println(\"Enter second matrix:\");\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                b[i][j] = sc.nextInt();\n            }\n        }\n\n        System.out.println(\"Sum Matrix:\");\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                System.out.print((a[i][j] + b[i][j]) + \" \");\n            }\n            System.out.println();\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter rows: 2\nEnter columns: 2\nEnter first matrix:\n1 2\n3 4\nEnter second matrix:\n5 6\n7 8\nSum Matrix:\n6 8\n10 12"
+  },
+  {
+    "program_name": "Student Grade Calculator",
+    "description": "Calculates total, percentage, and grade based on marks",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StudentGradeCalculator.java).\nCompile: javac StudentGradeCalculator.java\nRun: java StudentGradeCalculator",
+    "code": "import java.util.Scanner;\n\npublic class StudentGradeCalculator {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter marks of Subject 1: \");\n        int s1 = sc.nextInt();\n\n        System.out.print(\"Enter marks of Subject 2: \");\n        int s2 = sc.nextInt();\n\n        System.out.print(\"Enter marks of Subject 3: \");\n        int s3 = sc.nextInt();\n\n        int total = s1 + s2 + s3;\n        double percentage = (total / 300.0) * 100;\n\n        System.out.println(\"Total = \" + total);\n        System.out.println(\"Percentage = \" + percentage);\n\n        if (percentage >= 90) {\n            System.out.println(\"Grade: A+\");\n        } else if (percentage >= 80) {\n            System.out.println(\"Grade: A\");\n        } else if (percentage >= 70) {\n            System.out.println(\"Grade: B\");\n        } else if (percentage >= 60) {\n            System.out.println(\"Grade: C\");\n        } else {\n            System.out.println(\"Grade: Fail\");\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter marks of Subject 1: 85\nEnter marks of Subject 2: 90\nEnter marks of Subject 3: 80\nTotal = 255\nPercentage = 85.0\nGrade: A"
+  }
+]
+```
