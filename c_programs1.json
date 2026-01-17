@@ -1,0 +1,219 @@
+[
+  {
+    "program_name": "Hello World",
+    "description": "Prints Hello World in C",
+    "instruction": "How to Run:\nSave: HelloWorld.c\nCompile: gcc HelloWorld.c -o HelloWorld\nRun: ./HelloWorld",
+    "code": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}",
+    "output": "Hello, World!"
+  },
+  {
+    "program_name": "Print Your Name",
+    "description": "Prints a name using printf()",
+    "instruction": "How to Run:\nSave: PrintName.c\nCompile: gcc PrintName.c -o PrintName\nRun: ./PrintName",
+    "code": "#include <stdio.h>\n\nint main() {\n    printf(\"My name is Hariom\\n\");\n    return 0;\n}",
+    "output": "My name is Hariom"
+  },
+  {
+    "program_name": "Add Two Numbers",
+    "description": "Adds two integers using variables",
+    "instruction": "How to Run:\nSave: AddTwoNumbers.c\nCompile: gcc AddTwoNumbers.c -o AddTwoNumbers\nRun: ./AddTwoNumbers",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 20;\n    int sum = a + b;\n\n    printf(\"Sum = %d\\n\", sum);\n    return 0;\n}",
+    "output": "Sum = 30"
+  },
+  {
+    "program_name": "Add Two Numbers (User Input)",
+    "description": "Takes two integers from user and adds them",
+    "instruction": "How to Run:\nSave: AddUserInput.c\nCompile: gcc AddUserInput.c -o AddUserInput\nRun: ./AddUserInput",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a, b;\n\n    printf(\"Enter two numbers: \");\n    scanf(\"%d %d\", &a, &b);\n\n    printf(\"Sum = %d\\n\", a + b);\n    return 0;\n}",
+    "output": "Enter two numbers: 10 20\nSum = 30"
+  },
+  {
+    "program_name": "Subtract Two Numbers",
+    "description": "Subtracts two integers",
+    "instruction": "How to Run:\nSave: Subtract.c\nCompile: gcc Subtract.c -o Subtract\nRun: ./Subtract",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 50, b = 20;\n    printf(\"Subtraction = %d\\n\", a - b);\n    return 0;\n}",
+    "output": "Subtraction = 30"
+  },
+  {
+    "program_name": "Multiply Two Numbers",
+    "description": "Multiplies two integers",
+    "instruction": "How to Run:\nSave: Multiply.c\nCompile: gcc Multiply.c -o Multiply\nRun: ./Multiply",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 5, b = 6;\n    printf(\"Multiplication = %d\\n\", a * b);\n    return 0;\n}",
+    "output": "Multiplication = 30"
+  },
+  {
+    "program_name": "Divide Two Numbers",
+    "description": "Divides two integers and prints quotient",
+    "instruction": "How to Run:\nSave: Divide.c\nCompile: gcc Divide.c -o Divide\nRun: ./Divide",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 20, b = 4;\n    printf(\"Division = %d\\n\", a / b);\n    return 0;\n}",
+    "output": "Division = 5"
+  },
+  {
+    "program_name": "Quotient and Remainder",
+    "description": "Calculates quotient and remainder using / and % operators",
+    "instruction": "How to Run:\nSave: QuotientRemainder.c\nCompile: gcc QuotientRemainder.c -o QuotientRemainder\nRun: ./QuotientRemainder",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 17, b = 5;\n\n    printf(\"Quotient = %d\\n\", a / b);\n    printf(\"Remainder = %d\\n\", a % b);\n\n    return 0;\n}",
+    "output": "Quotient = 3\nRemainder = 2"
+  },
+  {
+    "program_name": "Swap Two Numbers (Using Temp)",
+    "description": "Swaps two numbers using a temporary variable",
+    "instruction": "How to Run:\nSave: SwapTemp.c\nCompile: gcc SwapTemp.c -o SwapTemp\nRun: ./SwapTemp",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 20, temp;\n\n    temp = a;\n    a = b;\n    b = temp;\n\n    printf(\"a = %d\\n\", a);\n    printf(\"b = %d\\n\", b);\n\n    return 0;\n}",
+    "output": "a = 20\nb = 10"
+  },
+  {
+    "program_name": "Swap Two Numbers (Without Temp)",
+    "description": "Swaps two numbers without using temp variable",
+    "instruction": "How to Run:\nSave: SwapNoTemp.c\nCompile: gcc SwapNoTemp.c -o SwapNoTemp\nRun: ./SwapNoTemp",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 20;\n\n    a = a + b;\n    b = a - b;\n    a = a - b;\n\n    printf(\"a = %d\\n\", a);\n    printf(\"b = %d\\n\", b);\n\n    return 0;\n}",
+    "output": "a = 20\nb = 10"
+  },
+  {
+    "program_name": "Check Even or Odd",
+    "description": "Checks if number is even or odd using modulo",
+    "instruction": "How to Run:\nSave: EvenOdd.c\nCompile: gcc EvenOdd.c -o EvenOdd\nRun: ./EvenOdd",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = 15;\n\n    if (num % 2 == 0)\n        printf(\"Even Number\\n\");\n    else\n        printf(\"Odd Number\\n\");\n\n    return 0;\n}",
+    "output": "Odd Number"
+  },
+  {
+    "program_name": "Check Positive, Negative or Zero",
+    "description": "Checks whether a number is positive, negative, or zero",
+    "instruction": "How to Run:\nSave: PosNegZero.c\nCompile: gcc PosNegZero.c -o PosNegZero\nRun: ./PosNegZero",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = -5;\n\n    if (num > 0)\n        printf(\"Positive\\n\");\n    else if (num < 0)\n        printf(\"Negative\\n\");\n    else\n        printf(\"Zero\\n\");\n\n    return 0;\n}",
+    "output": "Negative"
+  },
+  {
+    "program_name": "Largest of Two Numbers",
+    "description": "Finds largest among two numbers using if-else",
+    "instruction": "How to Run:\nSave: LargestTwo.c\nCompile: gcc LargestTwo.c -o LargestTwo\nRun: ./LargestTwo",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 50;\n\n    if (a > b)\n        printf(\"Largest = %d\\n\", a);\n    else\n        printf(\"Largest = %d\\n\", b);\n\n    return 0;\n}",
+    "output": "Largest = 50"
+  },
+  {
+    "program_name": "Largest of Three Numbers",
+    "description": "Finds largest among three numbers",
+    "instruction": "How to Run:\nSave: LargestThree.c\nCompile: gcc LargestThree.c -o LargestThree\nRun: ./LargestThree",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 30, c = 20;\n\n    if (a > b && a > c)\n        printf(\"Largest = %d\\n\", a);\n    else if (b > c)\n        printf(\"Largest = %d\\n\", b);\n    else\n        printf(\"Largest = %d\\n\", c);\n\n    return 0;\n}",
+    "output": "Largest = 30"
+  },
+  {
+    "program_name": "Leap Year Check",
+    "description": "Checks whether a year is leap year or not",
+    "instruction": "How to Run:\nSave: LeapYear.c\nCompile: gcc LeapYear.c -o LeapYear\nRun: ./LeapYear",
+    "code": "#include <stdio.h>\n\nint main() {\n    int year = 2024;\n\n    if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))\n        printf(\"Leap Year\\n\");\n    else\n        printf(\"Not a Leap Year\\n\");\n\n    return 0;\n}",
+    "output": "Leap Year"
+  },
+  {
+    "program_name": "Check Vowel or Consonant",
+    "description": "Checks whether a character is vowel or consonant using switch-case",
+    "instruction": "How to Run:\nSave: VowelConsonant.c\nCompile: gcc VowelConsonant.c -o VowelConsonant\nRun: ./VowelConsonant",
+    "code": "#include <stdio.h>\n\nint main() {\n    char ch = 'a';\n\n    switch (ch) {\n        case 'a': case 'e': case 'i': case 'o': case 'u':\n        case 'A': case 'E': case 'I': case 'O': case 'U':\n            printf(\"Vowel\\n\");\n            break;\n        default:\n            printf(\"Consonant\\n\");\n    }\n\n    return 0;\n}",
+    "output": "Vowel"
+  },
+  {
+    "program_name": "Check Alphabet or Not",
+    "description": "Checks whether a character is an alphabet or not",
+    "instruction": "How to Run:\nSave: AlphabetCheck.c\nCompile: gcc AlphabetCheck.c -o AlphabetCheck\nRun: ./AlphabetCheck",
+    "code": "#include <stdio.h>\n\nint main() {\n    char ch = '9';\n\n    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))\n        printf(\"Alphabet\\n\");\n    else\n        printf(\"Not an Alphabet\\n\");\n\n    return 0;\n}",
+    "output": "Not an Alphabet"
+  },
+  {
+    "program_name": "Simple Calculator (Switch Case)",
+    "description": "Performs basic operations using switch-case",
+    "instruction": "How to Run:\nSave: Calculator.c\nCompile: gcc Calculator.c -o Calculator\nRun: ./Calculator",
+    "code": "#include <stdio.h>\n\nint main() {\n    double a = 10, b = 5;\n    char op = '+';\n\n    switch (op) {\n        case '+':\n            printf(\"Result = %.2f\\n\", a + b);\n            break;\n        case '-':\n            printf(\"Result = %.2f\\n\", a - b);\n            break;\n        case '*':\n            printf(\"Result = %.2f\\n\", a * b);\n            break;\n        case '/':\n            if (b != 0)\n                printf(\"Result = %.2f\\n\", a / b);\n            else\n                printf(\"Cannot divide by zero\\n\");\n            break;\n        default:\n            printf(\"Invalid operator\\n\");\n    }\n\n    return 0;\n}",
+    "output": "Result = 15.00"
+  },
+  {
+    "program_name": "Print 1 to 10 (For Loop)",
+    "description": "Prints numbers from 1 to 10 using loop",
+    "instruction": "How to Run:\nSave: Print1to10.c\nCompile: gcc Print1to10.c -o Print1to10\nRun: ./Print1to10",
+    "code": "#include <stdio.h>\n\nint main() {\n    int i;\n    for (i = 1; i <= 10; i++) {\n        printf(\"%d\\n\", i);\n    }\n    return 0;\n}",
+    "output": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+  },
+  {
+    "program_name": "Sum of First N Natural Numbers",
+    "description": "Calculates sum from 1 to N using loop",
+    "instruction": "How to Run:\nSave: SumNatural.c\nCompile: gcc SumNatural.c -o SumNatural\nRun: ./SumNatural",
+    "code": "#include <stdio.h>\n\nint main() {\n    int n = 5, i;\n    int sum = 0;\n\n    for (i = 1; i <= n; i++) {\n        sum += i;\n    }\n\n    printf(\"Sum = %d\\n\", sum);\n    return 0;\n}",
+    "output": "Sum = 15"
+  },
+  {
+    "program_name": "Factorial of a Number",
+    "description": "Finds factorial using loop",
+    "instruction": "How to Run:\nSave: Factorial.c\nCompile: gcc Factorial.c -o Factorial\nRun: ./Factorial",
+    "code": "#include <stdio.h>\n\nint main() {\n    int n = 5, i;\n    long fact = 1;\n\n    for (i = 1; i <= n; i++) {\n        fact *= i;\n    }\n\n    printf(\"Factorial = %ld\\n\", fact);\n    return 0;\n}",
+    "output": "Factorial = 120"
+  },
+  {
+    "program_name": "Multiplication Table",
+    "description": "Prints multiplication table of a given number",
+    "instruction": "How to Run:\nSave: Table.c\nCompile: gcc Table.c -o Table\nRun: ./Table",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = 5, i;\n\n    for (i = 1; i <= 10; i++) {\n        printf(\"%d x %d = %d\\n\", num, i, num * i);\n    }\n\n    return 0;\n}",
+    "output": "5 x 1 = 5\n5 x 2 = 10\n5 x 3 = 15\n5 x 4 = 20\n5 x 5 = 25\n5 x 6 = 30\n5 x 7 = 35\n5 x 8 = 40\n5 x 9 = 45\n5 x 10 = 50"
+  },
+  {
+    "program_name": "Reverse a Number",
+    "description": "Reverses digits of a number using while loop",
+    "instruction": "How to Run:\nSave: ReverseNumber.c\nCompile: gcc ReverseNumber.c -o ReverseNumber\nRun: ./ReverseNumber",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = 1234;\n    int rev = 0;\n\n    while (num != 0) {\n        int digit = num % 10;\n        rev = rev * 10 + digit;\n        num /= 10;\n    }\n\n    printf(\"Reverse = %d\\n\", rev);\n    return 0;\n}",
+    "output": "Reverse = 4321"
+  },
+  {
+    "program_name": "Palindrome Number Check",
+    "description": "Checks whether a number is palindrome or not",
+    "instruction": "How to Run:\nSave: PalindromeNumber.c\nCompile: gcc PalindromeNumber.c -o PalindromeNumber\nRun: ./PalindromeNumber",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = 121, original, rev = 0;\n    original = num;\n\n    while (num != 0) {\n        int digit = num % 10;\n        rev = rev * 10 + digit;\n        num /= 10;\n    }\n\n    if (original == rev)\n        printf(\"Palindrome Number\\n\");\n    else\n        printf(\"Not Palindrome\\n\");\n\n    return 0;\n}",
+    "output": "Palindrome Number"
+  },
+  {
+    "program_name": "Prime Number Check",
+    "description": "Checks whether a number is prime or not",
+    "instruction": "How to Run:\nSave: PrimeCheck.c\nCompile: gcc PrimeCheck.c -o PrimeCheck\nRun: ./PrimeCheck",
+    "code": "#include <stdio.h>\n\nint main() {\n    int num = 29, i, isPrime = 1;\n\n    if (num <= 1) isPrime = 0;\n\n    for (i = 2; i <= num / 2; i++) {\n        if (num % i == 0) {\n            isPrime = 0;\n            break;\n        }\n    }\n\n    if (isPrime)\n        printf(\"Prime Number\\n\");\n    else\n        printf(\"Not Prime Number\\n\");\n\n    return 0;\n}",
+    "output": "Prime Number"
+  },
+  {
+    "program_name": "Fibonacci Series",
+    "description": "Prints Fibonacci series up to N terms using loop",
+    "instruction": "How to Run:\nSave: Fibonacci.c\nCompile: gcc Fibonacci.c -o Fibonacci\nRun: ./Fibonacci",
+    "code": "#include <stdio.h>\n\nint main() {\n    int n = 7;\n    int a = 0, b = 1;\n\n    printf(\"Fibonacci: \");\n\n    for (int i = 1; i <= n; i++) {\n        printf(\"%d \", a);\n        int next = a + b;\n        a = b;\n        b = next;\n    }\n\n    return 0;\n}",
+    "output": "Fibonacci: 0 1 1 2 3 5 8"
+  },
+  {
+    "program_name": "Simple Interest",
+    "description": "Calculates simple interest using formula (P*R*T)/100",
+    "instruction": "How to Run:\nSave: SimpleInterest.c\nCompile: gcc SimpleInterest.c -o SimpleInterest\nRun: ./SimpleInterest",
+    "code": "#include <stdio.h>\n\nint main() {\n    double p = 10000, r = 5, t = 2;\n    double si = (p * r * t) / 100;\n\n    printf(\"Simple Interest = %.2f\\n\", si);\n    return 0;\n}",
+    "output": "Simple Interest = 1000.00"
+  },
+  {
+    "program_name": "Area of Circle",
+    "description": "Calculates area of a circle using pi*r*r",
+    "instruction": "How to Run:\nSave: AreaCircle.c\nCompile: gcc AreaCircle.c -o AreaCircle\nRun: ./AreaCircle",
+    "code": "#include <stdio.h>\n\nint main() {\n    double r = 7;\n    double area = 3.14159 * r * r;\n\n    printf(\"Area = %.5f\\n\", area);\n    return 0;\n}",
+    "output": "Area = 153.93791"
+  },
+  {
+    "program_name": "Perimeter of Rectangle",
+    "description": "Calculates perimeter using 2*(L+W)",
+    "instruction": "How to Run:\nSave: PerimeterRectangle.c\nCompile: gcc PerimeterRectangle.c -o PerimeterRectangle\nRun: ./PerimeterRectangle",
+    "code": "#include <stdio.h>\n\nint main() {\n    double l = 10, w = 5;\n    double perimeter = 2 * (l + w);\n\n    printf(\"Perimeter = %.2f\\n\", perimeter);\n    return 0;\n}",
+    "output": "Perimeter = 30.00"
+  },
+  {
+    "program_name": "Celsius to Fahrenheit",
+    "description": "Converts Celsius to Fahrenheit using (C*9/5)+32",
+    "instruction": "How to Run:\nSave: CelsiusToFahrenheit.c\nCompile: gcc CelsiusToFahrenheit.c -o CelsiusToFahrenheit\nRun: ./CelsiusToFahrenheit",
+    "code": "#include <stdio.h>\n\nint main() {\n    double c = 25;\n    double f = (c * 9 / 5) + 32;\n\n    printf(\"Fahrenheit = %.2f\\n\", f);\n    return 0;\n}",
+    "output": "Fahrenheit = 77.00"
+  },
+  {
+    "program_name": "Right Triangle Star Pattern",
+    "description": "Prints right triangle star pattern using nested loops",
+    "instruction": "How to Run:\nSave: RightTrianglePattern.c\nCompile: gcc RightTrianglePattern.c -o RightTrianglePattern\nRun: ./RightTrianglePattern",
+    "code": "#include <stdio.h>\n\nint main() {\n    int n = 5;\n\n    for (int i = 1; i <= n; i++) {\n        for (int j = 1; j <= i; j++) {\n            printf(\"* \");\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+    "output": "*\n* *\n* * *\n* * * *\n* * * * *"
+  }
+]
