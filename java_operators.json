@@ -1,0 +1,121 @@
+[
+  {
+    "program_name": "Arithmetic Operators (+, -, *, /, %)",
+    "description": "Demonstrates all arithmetic operators on two integers",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ArithmeticOperatorsDemo.java).\nCompile: javac ArithmeticOperatorsDemo.java\nRun: java ArithmeticOperatorsDemo",
+    "code": "public class ArithmeticOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 20;\n        int b = 6;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"b = \" + b);\n        System.out.println(\"a + b = \" + (a + b));\n        System.out.println(\"a - b = \" + (a - b));\n        System.out.println(\"a * b = \" + (a * b));\n        System.out.println(\"a / b = \" + (a / b));\n        System.out.println(\"a % b = \" + (a % b));\n    }\n}",
+    "output": "a = 20\nb = 6\na + b = 26\na - b = 14\na * b = 120\na / b = 3\na % b = 2"
+  },
+  {
+    "program_name": "Arithmetic Operators with Double Division",
+    "description": "Shows integer division vs double division using casting",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ArithmeticDoubleDivision.java).\nCompile: javac ArithmeticDoubleDivision.java\nRun: java ArithmeticDoubleDivision",
+    "code": "public class ArithmeticDoubleDivision {\n    public static void main(String[] args) {\n        int a = 7;\n        int b = 2;\n\n        System.out.println(\"Integer Division: \" + (a / b));\n        System.out.println(\"Double Division: \" + ((double) a / b));\n    }\n}",
+    "output": "Integer Division: 3\nDouble Division: 3.5"
+  },
+  {
+    "program_name": "Unary Operators (++, --) Basic",
+    "description": "Demonstrates increment and decrement operators",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., UnaryIncDecBasic.java).\nCompile: javac UnaryIncDecBasic.java\nRun: java UnaryIncDecBasic",
+    "code": "public class UnaryIncDecBasic {\n    public static void main(String[] args) {\n        int a = 10;\n\n        a++;\n        System.out.println(\"After a++ : \" + a);\n\n        a--;\n        System.out.println(\"After a-- : \" + a);\n    }\n}",
+    "output": "After a++ : 11\nAfter a-- : 10"
+  },
+  {
+    "program_name": "Pre-Increment vs Post-Increment",
+    "description": "Shows difference between ++a and a++",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PrePostIncrement.java).\nCompile: javac PrePostIncrement.java\nRun: java PrePostIncrement",
+    "code": "public class PrePostIncrement {\n    public static void main(String[] args) {\n        int a = 5;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"Post-Increment (a++): \" + (a++));\n        System.out.println(\"After Post-Increment a = \" + a);\n\n        int b = 5;\n        System.out.println(\"\\nb = \" + b);\n        System.out.println(\"Pre-Increment (++b): \" + (++b));\n        System.out.println(\"After Pre-Increment b = \" + b);\n    }\n}",
+    "output": "a = 5\nPost-Increment (a++): 5\nAfter Post-Increment a = 6\n\nb = 5\nPre-Increment (++b): 6\nAfter Pre-Increment b = 6"
+  },
+  {
+    "program_name": "Pre-Decrement vs Post-Decrement",
+    "description": "Shows difference between --a and a--",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PrePostDecrement.java).\nCompile: javac PrePostDecrement.java\nRun: java PrePostDecrement",
+    "code": "public class PrePostDecrement {\n    public static void main(String[] args) {\n        int a = 8;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"Post-Decrement (a--): \" + (a--));\n        System.out.println(\"After Post-Decrement a = \" + a);\n\n        int b = 8;\n        System.out.println(\"\\nb = \" + b);\n        System.out.println(\"Pre-Decrement (--b): \" + (--b));\n        System.out.println(\"After Pre-Decrement b = \" + b);\n    }\n}",
+    "output": "a = 8\nPost-Decrement (a--): 8\nAfter Post-Decrement a = 7\n\nb = 8\nPre-Decrement (--b): 7\nAfter Pre-Decrement b = 7"
+  },
+  {
+    "program_name": "Assignment Operators (=, +=, -=, *=, /=, %=)",
+    "description": "Demonstrates different assignment operators in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AssignmentOperatorsDemo.java).\nCompile: javac AssignmentOperatorsDemo.java\nRun: java AssignmentOperatorsDemo",
+    "code": "public class AssignmentOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 10;\n\n        a += 5;\n        System.out.println(\"a += 5 -> \" + a);\n\n        a -= 3;\n        System.out.println(\"a -= 3 -> \" + a);\n\n        a *= 2;\n        System.out.println(\"a *= 2 -> \" + a);\n\n        a /= 4;\n        System.out.println(\"a /= 4 -> \" + a);\n\n        a %= 3;\n        System.out.println(\"a %= 3 -> \" + a);\n    }\n}",
+    "output": "a += 5 -> 15\na -= 3 -> 12\na *= 2 -> 24\na /= 4 -> 6\na %= 3 -> 0"
+  },
+  {
+    "program_name": "Relational Operators (>, <, >=, <=, ==, !=)",
+    "description": "Demonstrates relational operators and their boolean results",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., RelationalOperatorsDemo.java).\nCompile: javac RelationalOperatorsDemo.java\nRun: java RelationalOperatorsDemo",
+    "code": "public class RelationalOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 20;\n\n        System.out.println(\"a > b : \" + (a > b));\n        System.out.println(\"a < b : \" + (a < b));\n        System.out.println(\"a >= b : \" + (a >= b));\n        System.out.println(\"a <= b : \" + (a <= b));\n        System.out.println(\"a == b : \" + (a == b));\n        System.out.println(\"a != b : \" + (a != b));\n    }\n}",
+    "output": "a > b : false\na < b : true\na >= b : false\na <= b : true\na == b : false\na != b : true"
+  },
+  {
+    "program_name": "Logical Operators (&&, ||, !)",
+    "description": "Demonstrates logical AND, OR, and NOT operators",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., LogicalOperatorsDemo.java).\nCompile: javac LogicalOperatorsDemo.java\nRun: java LogicalOperatorsDemo",
+    "code": "public class LogicalOperatorsDemo {\n    public static void main(String[] args) {\n        int age = 20;\n        boolean hasID = true;\n\n        System.out.println(\"Eligible (age>=18 && hasID): \" + (age >= 18 && hasID));\n        System.out.println(\"Eligible (age>=18 || hasID): \" + (age >= 18 || hasID));\n        System.out.println(\"NOT hasID (!hasID): \" + (!hasID));\n    }\n}",
+    "output": "Eligible (age>=18 && hasID): true\nEligible (age>=18 || hasID): true\nNOT hasID (!hasID): false"
+  },
+  {
+    "program_name": "Short-Circuit Logical Operators (&&, ||) Example",
+    "description": "Shows short-circuit behavior where second condition may not execute",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ShortCircuitDemo.java).\nCompile: javac ShortCircuitDemo.java\nRun: java ShortCircuitDemo",
+    "code": "public class ShortCircuitDemo {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 0;\n\n        if (b != 0 && a / b > 1) {\n            System.out.println(\"Valid division\");\n        } else {\n            System.out.println(\"Division avoided due to short-circuit\");\n        }\n    }\n}",
+    "output": "Division avoided due to short-circuit"
+  },
+  {
+    "program_name": "Bitwise Operators (&, |, ^, ~) Basic",
+    "description": "Demonstrates bitwise AND, OR, XOR, and NOT operations",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., BitwiseOperatorsDemo.java).\nCompile: javac BitwiseOperatorsDemo.java\nRun: java BitwiseOperatorsDemo",
+    "code": "public class BitwiseOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = 3;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"b = \" + b);\n        System.out.println(\"a & b = \" + (a & b));\n        System.out.println(\"a | b = \" + (a | b));\n        System.out.println(\"a ^ b = \" + (a ^ b));\n        System.out.println(\"~a = \" + (~a));\n    }\n}",
+    "output": "a = 5\nb = 3\na & b = 1\na | b = 7\na ^ b = 6\n~a = -6"
+  },
+  {
+    "program_name": "Bitwise Shift Operators (<<, >>, >>>)",
+    "description": "Demonstrates left shift, right shift and unsigned right shift",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ShiftOperatorsDemo.java).\nCompile: javac ShiftOperatorsDemo.java\nRun: java ShiftOperatorsDemo",
+    "code": "public class ShiftOperatorsDemo {\n    public static void main(String[] args) {\n        int a = 8;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"a << 2 = \" + (a << 2));\n        System.out.println(\"a >> 2 = \" + (a >> 2));\n        System.out.println(\"a >>> 2 = \" + (a >>> 2));\n    }\n}",
+    "output": "a = 8\na << 2 = 32\na >> 2 = 2\na >>> 2 = 2"
+  },
+  {
+    "program_name": "Bitwise AND for Even/Odd Check",
+    "description": "Checks if a number is even or odd using bitwise AND operator",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., EvenOddBitwise.java).\nCompile: javac EvenOddBitwise.java\nRun: java EvenOddBitwise",
+    "code": "public class EvenOddBitwise {\n    public static void main(String[] args) {\n        int num = 15;\n\n        if ((num & 1) == 0) {\n            System.out.println(\"Even Number\");\n        } else {\n            System.out.println(\"Odd Number\");\n        }\n    }\n}",
+    "output": "Odd Number"
+  },
+  {
+    "program_name": "Ternary Operator (?:) Basic Example",
+    "description": "Uses ternary operator to find maximum of two numbers",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., TernaryMax.java).\nCompile: javac TernaryMax.java\nRun: java TernaryMax",
+    "code": "public class TernaryMax {\n    public static void main(String[] args) {\n        int a = 25;\n        int b = 40;\n\n        int max = (a > b) ? a : b;\n        System.out.println(\"Max = \" + max);\n    }\n}",
+    "output": "Max = 40"
+  },
+  {
+    "program_name": "Ternary Operator for Even/Odd",
+    "description": "Uses ternary operator to print even or odd",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., TernaryEvenOdd.java).\nCompile: javac TernaryEvenOdd.java\nRun: java TernaryEvenOdd",
+    "code": "public class TernaryEvenOdd {\n    public static void main(String[] args) {\n        int num = 12;\n\n        String result = (num % 2 == 0) ? \"Even\" : \"Odd\";\n        System.out.println(result);\n    }\n}",
+    "output": "Even"
+  },
+  {
+    "program_name": "Operator Precedence Demo",
+    "description": "Shows how Java follows operator precedence in expressions",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., OperatorPrecedence.java).\nCompile: javac OperatorPrecedence.java\nRun: java OperatorPrecedence",
+    "code": "public class OperatorPrecedence {\n    public static void main(String[] args) {\n        int result1 = 10 + 5 * 2;\n        int result2 = (10 + 5) * 2;\n\n        System.out.println(\"10 + 5 * 2 = \" + result1);\n        System.out.println(\"(10 + 5) * 2 = \" + result2);\n    }\n}",
+    "output": "10 + 5 * 2 = 20\n(10 + 5) * 2 = 30"
+  },
+  {
+    "program_name": "String Operators (+) Concatenation Example",
+    "description": "Demonstrates how + operator works for string concatenation",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringConcatenationDemo.java).\nCompile: javac StringConcatenationDemo.java\nRun: java StringConcatenationDemo",
+    "code": "public class StringConcatenationDemo {\n    public static void main(String[] args) {\n        String firstName = \"Hariom\";\n        String lastName = \"Soni\";\n\n        System.out.println(\"Full Name: \" + firstName + \" \" + lastName);\n    }\n}",
+    "output": "Full Name: Hariom Soni"
+  },
+  {
+    "program_name": "Bitwise XOR Swap (Without Temp)",
+    "description": "Swaps two numbers without using temp variable using XOR operator",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., XorSwap.java).\nCompile: javac XorSwap.java\nRun: java XorSwap",
+    "code": "public class XorSwap {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 20;\n\n        System.out.println(\"Before Swap: a = \" + a + \", b = \" + b);\n\n        a = a ^ b;\n        b = a ^ b;\n        a = a ^ b;\n\n        System.out.println(\"After Swap: a = \" + a + \", b = \" + b);\n    }\n}",
+    "output": "Before Swap: a = 10, b = 20\nAfter Swap: a = 20, b = 10"
+  }
+]
