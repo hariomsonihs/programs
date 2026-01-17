@@ -1,0 +1,37 @@
+[
+  {
+    "program_name": "Pointer Basics",
+    "description": "Demonstrates pointer usage and address printing",
+    "instruction": "How to Run:\nSave: PointerBasics.c\nCompile: gcc PointerBasics.c -o PointerBasics\nRun: ./PointerBasics",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int *ptr = &a;\n\n    printf(\"Value of a = %d\\n\", a);\n    printf(\"Address of a = %p\\n\", (void*)&a);\n    printf(\"Pointer ptr = %p\\n\", (void*)ptr);\n    printf(\"Value using pointer *ptr = %d\\n\", *ptr);\n\n    return 0;\n}",
+    "output": "Value of a = 10\nAddress of a = (some address)\nPointer ptr = (same address)\nValue using pointer *ptr = 10"
+  },
+  {
+    "program_name": "Swap Two Numbers Using Pointers",
+    "description": "Swaps two numbers using pointer function",
+    "instruction": "How to Run:\nSave: SwapPointers.c\nCompile: gcc SwapPointers.c -o SwapPointers\nRun: ./SwapPointers",
+    "code": "#include <stdio.h>\n\nvoid swap(int *x, int *y) {\n    int temp = *x;\n    *x = *y;\n    *y = temp;\n}\n\nint main() {\n    int a = 10, b = 20;\n\n    printf(\"Before Swap: a=%d b=%d\\n\", a, b);\n    swap(&a, &b);\n    printf(\"After Swap: a=%d b=%d\\n\", a, b);\n\n    return 0;\n}",
+    "output": "Before Swap: a=10 b=20\nAfter Swap: a=20 b=10"
+  },
+  {
+    "program_name": "Structure Example (Student Details)",
+    "description": "Stores and prints student details using structure",
+    "instruction": "How to Run:\nSave: StructureStudent.c\nCompile: gcc StructureStudent.c -o StructureStudent\nRun: ./StructureStudent",
+    "code": "#include <stdio.h>\n#include <string.h>\n\nstruct Student {\n    int roll;\n    char name[50];\n    float marks;\n};\n\nint main() {\n    struct Student s;\n\n    s.roll = 1;\n    strcpy(s.name, \"Hariom\");\n    s.marks = 95.5;\n\n    printf(\"Roll: %d\\n\", s.roll);\n    printf(\"Name: %s\\n\", s.name);\n    printf(\"Marks: %.2f\\n\", s.marks);\n\n    return 0;\n}",
+    "output": "Roll: 1\nName: Hariom\nMarks: 95.50"
+  },
+  {
+    "program_name": "File Write Example",
+    "description": "Writes a line into a file using fprintf()",
+    "instruction": "How to Run:\nSave: FileWrite.c\nCompile: gcc FileWrite.c -o FileWrite\nRun: ./FileWrite",
+    "code": "#include <stdio.h>\n\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n\n    if (fp == NULL) {\n        printf(\"File cannot be opened\\n\");\n        return 0;\n    }\n\n    fprintf(fp, \"Hello File in C!\\n\");\n    fclose(fp);\n\n    printf(\"File written successfully\\n\");\n    return 0;\n}",
+    "output": "File written successfully"
+  },
+  {
+    "program_name": "File Read Example",
+    "description": "Reads content from file using fgets()",
+    "instruction": "How to Run:\nSave: FileRead.c\nCompile: gcc FileRead.c -o FileRead\nRun: ./FileRead",
+    "code": "#include <stdio.h>\n\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"r\");\n    char line[100];\n\n    if (fp == NULL) {\n        printf(\"File cannot be opened\\n\");\n        return 0;\n    }\n\n    printf(\"File Content:\\n\");\n    while (fgets(line, sizeof(line), fp)) {\n        printf(\"%s\", line);\n    }\n\n    fclose(fp);\n    return 0;\n}",
+    "output": "File Content:\nHello File in C!"
+  }
+]
