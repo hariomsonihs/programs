@@ -1,0 +1,37 @@
+[
+  {
+    "program_name": "Matrix Addition (2D Arrays)",
+    "description": "Adds two matrices of same size",
+    "instruction": "How to Run:\nSave: MatrixAddition.c\nCompile: gcc MatrixAddition.c -o MatrixAddition\nRun: ./MatrixAddition",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a[2][2] = {{1, 2}, {3, 4}};\n    int b[2][2] = {{5, 6}, {7, 8}};\n    int sum[2][2];\n\n    for (int i = 0; i < 2; i++) {\n        for (int j = 0; j < 2; j++) {\n            sum[i][j] = a[i][j] + b[i][j];\n        }\n    }\n\n    printf(\"Sum Matrix:\\n\");\n    for (int i = 0; i < 2; i++) {\n        for (int j = 0; j < 2; j++) {\n            printf(\"%d \", sum[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+    "output": "Sum Matrix:\n6 8\n10 12"
+  },
+  {
+    "program_name": "Matrix Transpose",
+    "description": "Prints transpose of a matrix",
+    "instruction": "How to Run:\nSave: MatrixTranspose.c\nCompile: gcc MatrixTranspose.c -o MatrixTranspose\nRun: ./MatrixTranspose",
+    "code": "#include <stdio.h>\n\nint main() {\n    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n\n    printf(\"Transpose:\\n\");\n    for (int j = 0; j < 3; j++) {\n        for (int i = 0; i < 2; i++) {\n            printf(\"%d \", matrix[i][j]);\n        }\n        printf(\"\\n\");\n    }\n\n    return 0;\n}",
+    "output": "Transpose:\n1 4\n2 5\n3 6"
+  },
+  {
+    "program_name": "Armstrong Number Check",
+    "description": "Checks whether a number is Armstrong number",
+    "instruction": "How to Run:\nSave: Armstrong.c\nCompile: gcc Armstrong.c -o Armstrong\nRun: ./Armstrong",
+    "code": "#include <stdio.h>\n#include <math.h>\n\nint main() {\n    int num = 153;\n    int original = num;\n    int digits = 0;\n    int temp = num;\n\n    while (temp != 0) {\n        digits++;\n        temp /= 10;\n    }\n\n    int sum = 0;\n    temp = num;\n\n    while (temp != 0) {\n        int digit = temp % 10;\n        sum += pow(digit, digits);\n        temp /= 10;\n    }\n\n    if (sum == original)\n        printf(\"Armstrong Number\\n\");\n    else\n        printf(\"Not Armstrong\\n\");\n\n    return 0;\n}",
+    "output": "Armstrong Number"
+  },
+  {
+    "program_name": "GCD of Two Numbers",
+    "description": "Finds GCD using Euclidean algorithm",
+    "instruction": "How to Run:\nSave: GCD.c\nCompile: gcc GCD.c -o GCD\nRun: ./GCD",
+    "code": "#include <stdio.h>\n\nint main() {\n    int a = 12, b = 18;\n\n    while (b != 0) {\n        int temp = b;\n        b = a % b;\n        a = temp;\n    }\n\n    printf(\"GCD = %d\\n\", a);\n    return 0;\n}",
+    "output": "GCD = 6"
+  },
+  {
+    "program_name": "LCM of Two Numbers",
+    "description": "Finds LCM using relation LCM = (a*b)/GCD",
+    "instruction": "How to Run:\nSave: LCM.c\nCompile: gcc LCM.c -o LCM\nRun: ./LCM",
+    "code": "#include <stdio.h>\n\nint gcd(int a, int b) {\n    while (b != 0) {\n        int temp = b;\n        b = a % b;\n        a = temp;\n    }\n    return a;\n}\n\nint main() {\n    int a = 12, b = 18;\n    int g = gcd(a, b);\n    int lcm = (a * b) / g;\n\n    printf(\"LCM = %d\\n\", lcm);\n    return 0;\n}",
+    "output": "LCM = 36"
+  }
+]
