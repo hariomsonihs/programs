@@ -1,0 +1,37 @@
+[
+  {
+    "program_name": "Fibonacci Series (Basic - Fixed Terms)",
+    "description": "Prints Fibonacci series for a fixed number of terms using loop",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FibonacciBasic.java).\nCompile: javac FibonacciBasic.java\nRun: java FibonacciBasic",
+    "code": "public class FibonacciBasic {\n    public static void main(String[] args) {\n        int n = 10;\n        int a = 0, b = 1;\n\n        System.out.print(\"Fibonacci Series: \");\n        for (int i = 1; i <= n; i++) {\n            System.out.print(a + \" \");\n            int next = a + b;\n            a = b;\n            b = next;\n        }\n    }\n}",
+    "output": "Fibonacci Series: 0 1 1 2 3 5 8 13 21 34"
+  },
+  {
+    "program_name": "Fibonacci Series Using Scanner (User Input Terms)",
+    "description": "Takes number of terms from user and prints Fibonacci series using loop",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FibonacciScanner.java).\nCompile: javac FibonacciScanner.java\nRun: java FibonacciScanner",
+    "code": "import java.util.Scanner;\n\npublic class FibonacciScanner {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter number of terms: \");\n        int n = sc.nextInt();\n\n        int a = 0, b = 1;\n\n        System.out.print(\"Fibonacci Series: \");\n        for (int i = 1; i <= n; i++) {\n            System.out.print(a + \" \");\n            int next = a + b;\n            a = b;\n            b = next;\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter number of terms: 7\nFibonacci Series: 0 1 1 2 3 5 8"
+  },
+  {
+    "program_name": "Fibonacci Using Recursion",
+    "description": "Prints Fibonacci series using recursive function (good for recursion practice)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FibonacciRecursion.java).\nCompile: javac FibonacciRecursion.java\nRun: java FibonacciRecursion",
+    "code": "public class FibonacciRecursion {\n    static int fib(int n) {\n        if (n == 0) return 0;\n        if (n == 1) return 1;\n        return fib(n - 1) + fib(n - 2);\n    }\n\n    public static void main(String[] args) {\n        int terms = 8;\n\n        System.out.print(\"Fibonacci Series: \");\n        for (int i = 0; i < terms; i++) {\n            System.out.print(fib(i) + \" \");\n        }\n    }\n}",
+    "output": "Fibonacci Series: 0 1 1 2 3 5 8 13"
+  },
+  {
+    "program_name": "Fibonacci - Nth Term (Using Loop)",
+    "description": "Finds the Nth Fibonacci term using loop (more efficient than recursion)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FibonacciNthTerm.java).\nCompile: javac FibonacciNthTerm.java\nRun: java FibonacciNthTerm",
+    "code": "import java.util.Scanner;\n\npublic class FibonacciNthTerm {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter N: \");\n        int n = sc.nextInt();\n\n        int a = 0, b = 1;\n\n        if (n == 0) {\n            System.out.println(\"Nth Fibonacci term = 0\");\n        } else if (n == 1) {\n            System.out.println(\"Nth Fibonacci term = 1\");\n        } else {\n            int term = 0;\n            for (int i = 2; i <= n; i++) {\n                term = a + b;\n                a = b;\n                b = term;\n            }\n            System.out.println(\"Nth Fibonacci term = \" + term);\n        }\n\n        sc.close();\n    }\n}",
+    "output": "Enter N: 7\nNth Fibonacci term = 13"
+  },
+  {
+    "program_name": "Fibonacci Series Sum",
+    "description": "Calculates sum of first N Fibonacci numbers using loop",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FibonacciSum.java).\nCompile: javac FibonacciSum.java\nRun: java FibonacciSum",
+    "code": "import java.util.Scanner;\n\npublic class FibonacciSum {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter number of terms: \");\n        int n = sc.nextInt();\n\n        int a = 0, b = 1;\n        long sum = 0;\n\n        System.out.print(\"Fibonacci Series: \");\n        for (int i = 1; i <= n; i++) {\n            System.out.print(a + \" \");\n            sum += a;\n\n            int next = a + b;\n            a = b;\n            b = next;\n        }\n\n        System.out.println(\"\\nSum of Fibonacci terms = \" + sum);\n\n        sc.close();\n    }\n}",
+    "output": "Enter number of terms: 7\nFibonacci Series: 0 1 1 2 3 5 8\nSum of Fibonacci terms = 20"
+  }
+]
