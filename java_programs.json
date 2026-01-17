@@ -1,0 +1,352 @@
+[
+  {
+    "program_name": "Hello World",
+    "description": "Basic Hello World program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class HelloWorld {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, Java!\");\n    }\n}",
+    "output": "Hello, Java!"
+  },
+  {
+    "program_name": "Add Two Numbers",
+    "description": "Program to add two integers in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class AddTwo {\n    public static void main(String[] args) {\n        int a = 10, b = 20;\n        System.out.println(\"Sum: \" + (a + b));\n    }\n}",
+    "output": "Sum: 30"
+  },
+  {
+    "program_name": "User Input",
+    "description": "Program to take user input using Scanner in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.util.Scanner;\npublic class UserInput {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        System.out.print(\"Enter name: \");\n        String name = sc.nextLine();\n        System.out.println(\"Welcome \" + name);\n    }\n}",
+    "output": "Enter name: Hariom\nWelcome Hariom"
+  },
+  {
+    "program_name": "Swap Numbers (Temp)",
+    "description": "Swap two numbers using a temporary variable in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Swap {\n    public static void main(String[] args) {\n        int a = 5, b = 10, temp;\n        temp = a; a = b; b = temp;\n        System.out.println(\"a: \" + a + \" b: \" + b);\n    }\n}",
+    "output": "a: 10 b: 5"
+  },
+  {
+    "program_name": "Swap Numbers (No Temp)",
+    "description": "Swap two numbers without using a temporary variable in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class SwapNoTemp {\n    public static void main(String[] args) {\n        int a = 5, b = 10;\n        a = a + b; b = a - b; a = a - b;\n        System.out.println(\"a: \" + a + \" b: \" + b);\n    }\n}",
+    "output": "a: 10 b: 5"
+  },
+  {
+    "program_name": "Check Even or Odd",
+    "description": "Program to check if a number is even or odd in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class EvenOdd {\n    public static void main(String[] args) {\n        int num = 29;\n        System.out.println(num % 2 == 0 ? \"Even\" : \"Odd\");\n    }\n}",
+    "output": "Odd"
+  },
+  {
+    "program_name": "Area of Rectangle",
+    "description": "Calculate area of a rectangle program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Area {\n    public static void main(String[] args) {\n        int l = 5, w = 10;\n        System.out.println(\"Area: \" + (l * w));\n    }\n}",
+    "output": "Area: 50"
+  },
+  {
+    "program_name": "Type Casting",
+    "description": "Program demonstrating type casting in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Casting {\n    public static void main(String[] args) {\n        double myDouble = 9.78;\n        int myInt = (int) myDouble;\n        System.out.println(myInt);\n    }\n}",
+    "output": "9"
+  },
+  {
+    "program_name": "ASCII Value",
+    "description": "Find ASCII value of a character program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Ascii {\n    public static void main(String[] args) {\n        char ch = 'A';\n        int ascii = ch;\n        System.out.println(\"ASCII: \" + ascii);\n    }\n}",
+    "output": "ASCII: 65"
+  },
+  {
+    "program_name": "Quotient and Remainder",
+    "description": "Compute quotient and remainder program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class DivMod {\n    public static void main(String[] args) {\n        int dividend = 25, divisor = 4;\n        System.out.println(\"Quotient: \" + (dividend / divisor));\n        System.out.println(\"Remainder: \" + (dividend % divisor));\n    }\n}",
+    "output": "Quotient: 6\nRemainder: 1"
+  },
+  {
+    "program_name": "Largest of Three",
+    "description": "Find largest of three numbers program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Largest {\n    public static void main(String[] args) {\n        int a = 10, b = 20, c = 15;\n        if(a>=b && a>=c) System.out.println(a);\n        else if(b>=a && b>=c) System.out.println(b);\n        else System.out.println(c);\n    }\n}",
+    "output": "20"
+  },
+  {
+    "program_name": "Positive or Negative",
+    "description": "Check if number is positive or negative program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class PosNeg {\n    public static void main(String[] args) {\n        int n = -10;\n        if (n > 0) System.out.println(\"Positive\");\n        else if (n < 0) System.out.println(\"Negative\");\n        else System.out.println(\"Zero\");\n    }\n}",
+    "output": "Negative"
+  },
+  {
+    "program_name": "Leap Year Checker",
+    "description": "Check for leap year program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class LeapYear {\n    public static void main(String[] args) {\n        int year = 2024;\n        boolean leap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);\n        System.out.println(leap ? \"Leap Year\" : \"Not Leap Year\");\n    }\n}",
+    "output": "Leap Year"
+  },
+  {
+    "program_name": "Multiplication Table",
+    "description": "Print multiplication table program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Table {\n    public static void main(String[] args) {\n        int num = 5;\n        for(int i = 1; i <= 10; ++i)\n            System.out.println(num + \" * \" + i + \" = \" + num * i);\n    }\n}",
+    "output": "5 * 1 = 5\n...\n5 * 10 = 50"
+  },
+  {
+    "program_name": "Factorial",
+    "description": "Calculate factorial of a number program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Factorial {\n    public static void main(String[] args) {\n        int num = 5, fact = 1;\n        for(int i = 1; i <= num; ++i) fact *= i;\n        System.out.println(\"Factorial: \" + fact);\n    }\n}",
+    "output": "Factorial: 120"
+  },
+  {
+    "program_name": "Fibonacci Series",
+    "description": "Print Fibonacci series program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Fibonacci {\n    public static void main(String[] args) {\n        int n = 10, t1 = 0, t2 = 1;\n        for (int i = 1; i <= n; ++i) {\n            System.out.print(t1 + \" \");\n            int sum = t1 + t2;\n            t1 = t2; t2 = sum;\n        }\n    }\n}",
+    "output": "0 1 1 2 3 5 8 13 21 34"
+  },
+  {
+    "program_name": "Reverse Number",
+    "description": "Reverse a number program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class ReverseNum {\n    public static void main(String[] args) {\n        int num = 1234, reversed = 0;\n        while(num != 0) {\n            reversed = reversed * 10 + num % 10;\n            num /= 10;\n        }\n        System.out.println(\"Reversed: \" + reversed);\n    }\n}",
+    "output": "Reversed: 4321"
+  },
+  {
+    "program_name": "Palindrome Number",
+    "description": "Check if number is palindrome program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class PalindromeNum {\n    public static void main(String[] args) {\n        int num = 121, original = num, reversed = 0;\n        while(num != 0) {\n            reversed = reversed * 10 + num % 10;\n            num /= 10;\n        }\n        System.out.println(original == reversed ? \"Palindrome\" : \"Not Palindrome\");\n    }\n}",
+    "output": "Palindrome"
+  },
+  {
+    "program_name": "Simple Calculator",
+    "description": "Simple calculator using switch case program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Calculator {\n    public static void main(String[] args) {\n        char operator = '+';\n        double n1 = 5, n2 = 10, result;\n        switch (operator) {\n            case '+': result = n1 + n2; break;\n            case '-': result = n1 - n2; break;\n            default: System.out.println(\"Invalid\"); return;\n        }\n        System.out.println(\"Result: \" + result);\n    }\n}",
+    "output": "Result: 15.0"
+  },
+  {
+    "program_name": "Count Digits",
+    "description": "Count digits in an integer program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class CountDigits {\n    public static void main(String[] args) {\n        int count = 0, num = 123456;\n        while (num != 0) { num /= 10; ++count; }\n        System.out.println(\"Digits: \" + count);\n    }\n}",
+    "output": "Digits: 6"
+  },
+  {
+    "program_name": "Array Declaration",
+    "description": "Declare and print array program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class ArrayDemo {\n    public static void main(String[] args) {\n        int[] arr = {1, 2, 3, 4, 5};\n        for (int i : arr) System.out.print(i + \" \");\n    }\n}",
+    "output": "1 2 3 4 5"
+  },
+  {
+    "program_name": "Sum of Array",
+    "description": "Calculate sum of array elements program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class ArraySum {\n    public static void main(String[] args) {\n        int[] arr = {10, 20, 30};\n        int sum = 0;\n        for(int num : arr) sum += num;\n        System.out.println(\"Sum: \" + sum);\n    }\n}",
+    "output": "Sum: 60"
+  },
+  {
+    "program_name": "Largest in Array",
+    "description": "Find largest element in array program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class LargestArray {\n    public static void main(String[] args) {\n        int[] arr = {5, 12, 9, 18, 3};\n        int max = arr[0];\n        for (int num : arr) if (num > max) max = num;\n        System.out.println(\"Largest: \" + max);\n    }\n}",
+    "output": "Largest: 18"
+  },
+  {
+    "program_name": "Reverse String",
+    "description": "Reverse a string program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class ReverseStr {\n    public static void main(String[] args) {\n        String str = \"Hello\", nstr = \"\";\n        for (int i = 0; i < str.length(); i++) nstr = str.charAt(i) + nstr;\n        System.out.println(\"Reversed: \" + nstr);\n    }\n}",
+    "output": "Reversed: olleH"
+  },
+  {
+    "program_name": "Check Vowel",
+    "description": "Check if character is vowel or consonant program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class Vowel {\n    public static void main(String[] args) {\n        char ch = 'i';\n        if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')\n            System.out.println(ch + \" is vowel\");\n        else System.out.println(ch + \" is consonant\");\n    }\n}",
+    "output": "i is vowel"
+  },
+  {
+    "program_name": "Sort Array",
+    "description": "Sort an array program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.util.Arrays;\npublic class SortArray {\n    public static void main(String[] args) {\n        int[] arr = {13, 7, 6, 45, 21};\n        Arrays.sort(arr);\n        System.out.println(\"Sorted: \" + Arrays.toString(arr));\n    }\n}",
+    "output": "Sorted: [6, 7, 13, 21, 45]"
+  },
+  {
+    "program_name": "Linear Search",
+    "description": "Linear search in array program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class LinearSearch {\n    public static void main(String[] args) {\n        int[] arr = {10, 20, 30, 40};\n        int target = 30;\n        for(int i=0; i<arr.length; i++) {\n            if(arr[i] == target) System.out.println(\"Found at index: \" + i);\n        }\n    }\n}",
+    "output": "Found at index: 2"
+  },
+  {
+    "program_name": "Remove Spaces",
+    "description": "Remove spaces from string program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class NoSpace {\n    public static void main(String[] args) {\n        String str = \"J a v a\";\n        System.out.println(str.replaceAll(\"\\\\s\", \"\"));\n    }\n}",
+    "output": "Java"
+  },
+  {
+    "program_name": "Count Character",
+    "description": "Count occurrences of character in string program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class CountChar {\n    public static void main(String[] args) {\n        String s = \"banana\";\n        int count = 0;\n        for(int i=0; i<s.length(); i++) if(s.charAt(i) == 'a') count++;\n        System.out.println(\"Count of a: \" + count);\n    }\n}",
+    "output": "Count of a: 3"
+  },
+  {
+    "program_name": "Matrix Addition",
+    "description": "Add two matrices program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class MatrixAdd {\n    public static void main(String[] args) {\n        int[][] a = {{1,2},{3,4}}, b = {{1,1},{1,1}};\n        for(int i=0;i<2;i++) {\n            for(int j=0;j<2;j++) System.out.print((a[i][j]+b[i][j])+\" \");\n            System.out.println();\n        }\n    }\n}",
+    "output": "2 3 \n4 5"
+  },
+  {
+    "program_name": "Class and Object",
+    "description": "Create class and object program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Dog {\n    String name = \"Tommy\";\n    void bark() { System.out.println(name + \" says Woof\"); }\n}\npublic class Main {\n    public static void main(String[] args) {\n        Dog d = new Dog();\n        d.bark();\n    }\n}",
+    "output": "Tommy says Woof"
+  },
+  {
+    "program_name": "Method Overloading",
+    "description": "Method overloading program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class MathUtils {\n    int add(int a, int b) { return a + b; }\n    int add(int a, int b, int c) { return a + b + c; }\n}\npublic class Overload {\n    public static void main(String[] args) {\n        MathUtils m = new MathUtils();\n        System.out.println(m.add(5, 5));\n        System.out.println(m.add(5, 5, 5));\n    }\n}",
+    "output": "10\n15"
+  },
+  {
+    "program_name": "Constructor",
+    "description": "Constructor program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Student {\n    int id;\n    Student(int i) { id = i; }\n}\npublic class ConsDemo {\n    public static void main(String[] args) {\n        Student s = new Student(101);\n        System.out.println(\"ID: \" + s.id);\n    }\n}",
+    "output": "ID: 101"
+  },
+  {
+    "program_name": "Inheritance",
+    "description": "Inheritance program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Animal { void eat() { System.out.println(\"Eating...\"); } }\nclass Cat extends Animal { void meow() { System.out.println(\"Meow\"); } }\npublic class Inherit {\n    public static void main(String[] args) {\n        Cat c = new Cat();\n        c.eat();\n        c.meow();\n    }\n}",
+    "output": "Eating...\nMeow"
+  },
+  {
+    "program_name": "Method Overriding",
+    "description": "Method overriding program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Parent { void show() { System.out.println(\"Parent\"); } }\nclass Child extends Parent { void show() { System.out.println(\"Child\"); } }\npublic class OverrideDemo {\n    public static void main(String[] args) {\n        Parent obj = new Child();\n        obj.show();\n    }\n}",
+    "output": "Child"
+  },
+  {
+    "program_name": "Encapsulation",
+    "description": "Encapsulation using getters and setters program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Person {\n    private String name;\n    public void setName(String n) { this.name = n; }\n    public String getName() { return name; }\n}\npublic class Encap {\n    public static void main(String[] args) {\n        Person p = new Person();\n        p.setName(\"John\");\n        System.out.println(p.getName());\n    }\n}",
+    "output": "John"
+  },
+  {
+    "program_name": "Abstract Class",
+    "description": "Abstract class and method program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "abstract class Shape { abstract void draw(); }\nclass Circle extends Shape { void draw() { System.out.println(\"Drawing Circle\"); } }\npublic class AbstractDemo {\n    public static void main(String[] args) {\n        Shape s = new Circle();\n        s.draw();\n    }\n}",
+    "output": "Drawing Circle"
+  },
+  {
+    "program_name": "Interface",
+    "description": "Interface program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "interface Printable { void print(); }\nclass Doc implements Printable {\n    public void print() { System.out.println(\"Printing Doc\"); }\n}\npublic class InterfaceDemo {\n    public static void main(String[] args) {\n        Printable p = new Doc();\n        p.print();\n    }\n}",
+    "output": "Printing Doc"
+  },
+  {
+    "program_name": "This Keyword",
+    "description": "Using 'this' keyword program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class Demo {\n    int x;\n    Demo(int x) { this.x = x; }\n    void show() { System.out.println(x); }\n}\npublic class ThisDemo {\n    public static void main(String[] args) { new Demo(5).show(); }\n}",
+    "output": "5"
+  },
+  {
+    "program_name": "Super Keyword",
+    "description": "Using 'super' keyword program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class A { String color = \"White\"; }\nclass B extends A {\n    String color = \"Black\";\n    void printColor() { System.out.println(color); System.out.println(super.color); }\n}\npublic class SuperDemo {\n    public static void main(String[] args) { new B().printColor(); }\n}",
+    "output": "Black\nWhite"
+  },
+  {
+    "program_name": "Try Catch",
+    "description": "Exception handling with try-catch program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class ExceptionDemo {\n    public static void main(String[] args) {\n        try { int data = 10 / 0; }\n        catch (ArithmeticException e) { System.out.println(e); }\n    }\n}",
+    "output": "java.lang.ArithmeticException: / by zero"
+  },
+  {
+    "program_name": "Finally Block",
+    "description": "Finally block in exception handling program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "public class FinallyDemo {\n    public static void main(String[] args) {\n        try { System.out.println(\"Try\"); }\n        finally { System.out.println(\"Finally runs always\"); }\n    }\n}",
+    "output": "Try\nFinally runs always"
+  },
+  {
+    "program_name": "ArrayList",
+    "description": "ArrayList example program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.util.ArrayList;\npublic class ListDemo {\n    public static void main(String[] args) {\n        ArrayList<String> list = new ArrayList<>();\n        list.add(\"Java\"); list.add(\"Python\");\n        System.out.println(list);\n    }\n}",
+    "output": "[Java, Python]"
+  },
+  {
+    "program_name": "HashMap",
+    "description": "HashMap example program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.util.HashMap;\npublic class MapDemo {\n    public static void main(String[] args) {\n        HashMap<Integer, String> map = new HashMap<>();\n        map.put(1, \"Apple\"); map.put(2, \"Banana\");\n        System.out.println(map.get(1));\n    }\n}",
+    "output": "Apple"
+  },
+  {
+    "program_name": "HashSet",
+    "description": "HashSet example program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.util.HashSet;\npublic class SetDemo {\n    public static void main(String[] args) {\n        HashSet<String> set = new HashSet<>();\n        set.add(\"A\"); set.add(\"A\");\n        System.out.println(set);\n    }\n}",
+    "output": "[A]"
+  },
+  {
+    "program_name": "Date and Time",
+    "description": "Current date and time program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.time.LocalDate;\npublic class DateDemo {\n    public static void main(String[] args) {\n        System.out.println(LocalDate.now());\n    }\n}",
+    "output": "2024-05-12"
+  },
+  {
+    "program_name": "File Creation",
+    "description": "Create a file program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.io.File;\npublic class FileCreate {\n    public static void main(String[] args) {\n        try {\n            File myObj = new File(\"filename.txt\");\n            if (myObj.createNewFile()) System.out.println(\"Created: \" + myObj.getName());\n        } catch (Exception e) {}\n    }\n}",
+    "output": "Created: filename.txt"
+  },
+  {
+    "program_name": "Write to File",
+    "description": "Write text to a file program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "import java.io.FileWriter;\npublic class WriteFile {\n    public static void main(String[] args) {\n        try {\n            FileWriter writer = new FileWriter(\"filename.txt\");\n            writer.write(\"Java is fun\");\n            writer.close();\n        } catch (Exception e) {}\n    }\n}",
+    "output": "(File content: Java is fun)"
+  },
+  {
+    "program_name": "Lambda Expression",
+    "description": "Lambda expression example program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "interface MyInter { void sayMsg(); }\npublic class Lambda {\n    public static void main(String[] args) {\n        MyInter msg = () -> System.out.println(\"Hello Lambda\");\n        msg.sayMsg();\n    }\n}",
+    "output": "Hello Lambda"
+  },
+  {
+    "program_name": "Multithreading",
+    "description": "Basic multithreading program in Java",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProgramName.java).\nCompile: javac ProgramName.java\nRun: java ProgramName",
+    "code": "class MyThread extends Thread {\n    public void run() { System.out.println(\"Thread running\"); }\n}\npublic class ThreadDemo {\n    public static void main(String[] args) {\n        MyThread t = new MyThread();\n        t.start();\n    }\n}",
+    "output": "Thread running"
+  }
+]
