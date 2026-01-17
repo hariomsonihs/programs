@@ -1,0 +1,261 @@
+[
+  {
+    "program_name": "Implicit Type Casting (Widening)",
+    "description": "Demonstrates implicit conversion from int to double (widening conversion)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ImplicitCasting.java).\nCompile: javac ImplicitCasting.java\nRun: java ImplicitCasting",
+    "code": "public class ImplicitCasting {\n    public static void main(String[] args) {\n        int a = 10;\n        double b = a;\n        System.out.println(\"int value = \" + a);\n        System.out.println(\"double value (after implicit casting) = \" + b);\n    }\n}",
+    "output": "int value = 10\ndouble value (after implicit casting) = 10.0"
+  },
+  {
+    "program_name": "Implicit Casting (byte to int)",
+    "description": "Demonstrates automatic conversion from byte to int",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ByteToIntCasting.java).\nCompile: javac ByteToIntCasting.java\nRun: java ByteToIntCasting",
+    "code": "public class ByteToIntCasting {\n    public static void main(String[] args) {\n        byte b = 50;\n        int num = b;\n        System.out.println(\"byte value = \" + b);\n        System.out.println(\"int value (after implicit casting) = \" + num);\n    }\n}",
+    "output": "byte value = 50\nint value (after implicit casting) = 50"
+  },
+  {
+    "program_name": "Implicit Casting (char to int - ASCII)",
+    "description": "Shows conversion of char to int which gives ASCII/Unicode value",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CharToIntASCII.java).\nCompile: javac CharToIntASCII.java\nRun: java CharToIntASCII",
+    "code": "public class CharToIntASCII {\n    public static void main(String[] args) {\n        char ch = 'A';\n        int ascii = ch;\n        System.out.println(\"Character = \" + ch);\n        System.out.println(\"ASCII/Unicode value = \" + ascii);\n    }\n}",
+    "output": "Character = A\nASCII/Unicode value = 65"
+  },
+  {
+    "program_name": "Implicit Casting (int to long)",
+    "description": "Demonstrates automatic type casting from int to long",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToLong.java).\nCompile: javac IntToLong.java\nRun: java IntToLong",
+    "code": "public class IntToLong {\n    public static void main(String[] args) {\n        int a = 2000;\n        long b = a;\n        System.out.println(\"int = \" + a);\n        System.out.println(\"long (after implicit casting) = \" + b);\n    }\n}",
+    "output": "int = 2000\nlong (after implicit casting) = 2000"
+  },
+  {
+    "program_name": "Implicit Casting (long to float)",
+    "description": "Converts long to float using implicit widening conversion",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., LongToFloat.java).\nCompile: javac LongToFloat.java\nRun: java LongToFloat",
+    "code": "public class LongToFloat {\n    public static void main(String[] args) {\n        long a = 99999999L;\n        float b = a;\n        System.out.println(\"long = \" + a);\n        System.out.println(\"float (after implicit casting) = \" + b);\n    }\n}",
+    "output": "long = 99999999\nfloat (after implicit casting) = 1.0E8"
+  },
+  {
+    "program_name": "Explicit Type Casting (Narrowing - double to int)",
+    "description": "Demonstrates explicit conversion from double to int (narrowing conversion)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DoubleToIntCasting.java).\nCompile: javac DoubleToIntCasting.java\nRun: java DoubleToIntCasting",
+    "code": "public class DoubleToIntCasting {\n    public static void main(String[] args) {\n        double a = 12.75;\n        int b = (int) a;\n        System.out.println(\"double = \" + a);\n        System.out.println(\"int (after explicit casting) = \" + b);\n    }\n}",
+    "output": "double = 12.75\nint (after explicit casting) = 12"
+  },
+  {
+    "program_name": "Explicit Casting (int to byte - Overflow Example)",
+    "description": "Shows explicit casting from int to byte and how overflow occurs",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToByteOverflow.java).\nCompile: javac IntToByteOverflow.java\nRun: java IntToByteOverflow",
+    "code": "public class IntToByteOverflow {\n    public static void main(String[] args) {\n        int a = 130;\n        byte b = (byte) a;\n        System.out.println(\"int = \" + a);\n        System.out.println(\"byte (after explicit casting) = \" + b);\n    }\n}",
+    "output": "int = 130\nbyte (after explicit casting) = -126"
+  },
+  {
+    "program_name": "Explicit Casting (float to int)",
+    "description": "Demonstrates explicit casting from float to int (decimal part removed)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., FloatToIntCasting.java).\nCompile: javac FloatToIntCasting.java\nRun: java FloatToIntCasting",
+    "code": "public class FloatToIntCasting {\n    public static void main(String[] args) {\n        float a = 99.99f;\n        int b = (int) a;\n        System.out.println(\"float = \" + a);\n        System.out.println(\"int (after explicit casting) = \" + b);\n    }\n}",
+    "output": "float = 99.99\nint (after explicit casting) = 99"
+  },
+  {
+    "program_name": "Explicit Casting (long to int)",
+    "description": "Shows narrowing conversion from long to int (possible data loss)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., LongToIntCasting.java).\nCompile: javac LongToIntCasting.java\nRun: java LongToIntCasting",
+    "code": "public class LongToIntCasting {\n    public static void main(String[] args) {\n        long a = 9999999999L;\n        int b = (int) a;\n        System.out.println(\"long = \" + a);\n        System.out.println(\"int (after explicit casting) = \" + b);\n    }\n}",
+    "output": "long = 9999999999\nint (after explicit casting) = 1410065407"
+  },
+  {
+    "program_name": "Type Promotion in Expressions",
+    "description": "Shows how Java promotes types automatically during arithmetic operations",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., TypePromotionDemo.java).\nCompile: javac TypePromotionDemo.java\nRun: java TypePromotionDemo",
+    "code": "public class TypePromotionDemo {\n    public static void main(String[] args) {\n        byte a = 10;\n        byte b = 20;\n\n        int sum = a + b;\n\n        System.out.println(\"byte a = \" + a);\n        System.out.println(\"byte b = \" + b);\n        System.out.println(\"a + b (promoted to int) = \" + sum);\n    }\n}",
+    "output": "byte a = 10\nbyte b = 20\na + b (promoted to int) = 30"
+  },
+  {
+    "program_name": "Type Casting in Division (int vs double result)",
+    "description": "Shows difference between integer division and double division using type casting",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DivisionCasting.java).\nCompile: javac DivisionCasting.java\nRun: java DivisionCasting",
+    "code": "public class DivisionCasting {\n    public static void main(String[] args) {\n        int a = 5;\n        int b = 2;\n\n        int result1 = a / b;\n        double result2 = (double) a / b;\n\n        System.out.println(\"int division (5/2) = \" + result1);\n        System.out.println(\"double division ((double)5/2) = \" + result2);\n    }\n}",
+    "output": "int division (5/2) = 2\ndouble division ((double)5/2) = 2.5"
+  },
+  {
+    "program_name": "Char to String Conversion",
+    "description": "Converts a char into a String using String.valueOf()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CharToString.java).\nCompile: javac CharToString.java\nRun: java CharToString",
+    "code": "public class CharToString {\n    public static void main(String[] args) {\n        char ch = 'H';\n        String s = String.valueOf(ch);\n\n        System.out.println(\"char = \" + ch);\n        System.out.println(\"String = \" + s);\n    }\n}",
+    "output": "char = H\nString = H"
+  },
+  {
+    "program_name": "String to Char Conversion",
+    "description": "Gets a character from a string using charAt()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToChar.java).\nCompile: javac StringToChar.java\nRun: java StringToChar",
+    "code": "public class StringToChar {\n    public static void main(String[] args) {\n        String s = \"Java\";\n        char ch = s.charAt(0);\n\n        System.out.println(\"String = \" + s);\n        System.out.println(\"First character = \" + ch);\n    }\n}",
+    "output": "String = Java\nFirst character = J"
+  },
+  {
+    "program_name": "String to Integer Conversion (Integer.parseInt)",
+    "description": "Converts numeric String to int using Integer.parseInt()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToIntParse.java).\nCompile: javac StringToIntParse.java\nRun: java StringToIntParse",
+    "code": "public class StringToIntParse {\n    public static void main(String[] args) {\n        String s = \"100\";\n        int num = Integer.parseInt(s);\n\n        System.out.println(\"String = \" + s);\n        System.out.println(\"int = \" + num);\n        System.out.println(\"int + 50 = \" + (num + 50));\n    }\n}",
+    "output": "String = 100\nint = 100\nint + 50 = 150"
+  },
+  {
+    "program_name": "Integer to String Conversion (String.valueOf)",
+    "description": "Converts int to String using String.valueOf()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToStringValueOf.java).\nCompile: javac IntToStringValueOf.java\nRun: java IntToStringValueOf",
+    "code": "public class IntToStringValueOf {\n    public static void main(String[] args) {\n        int num = 500;\n        String s = String.valueOf(num);\n\n        System.out.println(\"int = \" + num);\n        System.out.println(\"String = \" + s);\n        System.out.println(\"String + 10 = \" + (s + 10));\n    }\n}",
+    "output": "int = 500\nString = 500\nString + 10 = 50010"
+  },
+  {
+    "program_name": "String to Double Conversion (Double.parseDouble)",
+    "description": "Converts String into double using Double.parseDouble()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToDoubleParse.java).\nCompile: javac StringToDoubleParse.java\nRun: java StringToDoubleParse",
+    "code": "public class StringToDoubleParse {\n    public static void main(String[] args) {\n        String s = \"99.75\";\n        double num = Double.parseDouble(s);\n\n        System.out.println(\"String = \" + s);\n        System.out.println(\"double = \" + num);\n        System.out.println(\"double + 0.25 = \" + (num + 0.25));\n    }\n}",
+    "output": "String = 99.75\ndouble = 99.75\ndouble + 0.25 = 100.0"
+  },
+  {
+    "program_name": "Double to String Conversion",
+    "description": "Converts double to string using Double.toString()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DoubleToString.java).\nCompile: javac DoubleToString.java\nRun: java DoubleToString",
+    "code": "public class DoubleToString {\n    public static void main(String[] args) {\n        double num = 45.67;\n        String s = Double.toString(num);\n\n        System.out.println(\"double = \" + num);\n        System.out.println(\"String = \" + s);\n    }\n}",
+    "output": "double = 45.67\nString = 45.67"
+  },
+  {
+    "program_name": "String to Boolean Conversion",
+    "description": "Converts String to boolean using Boolean.parseBoolean()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToBoolean.java).\nCompile: javac StringToBoolean.java\nRun: java StringToBoolean",
+    "code": "public class StringToBoolean {\n    public static void main(String[] args) {\n        String s1 = \"true\";\n        String s2 = \"false\";\n\n        boolean b1 = Boolean.parseBoolean(s1);\n        boolean b2 = Boolean.parseBoolean(s2);\n\n        System.out.println(\"String 1 = \" + s1 + \" -> boolean = \" + b1);\n        System.out.println(\"String 2 = \" + s2 + \" -> boolean = \" + b2);\n    }\n}",
+    "output": "String 1 = true -> boolean = true\nString 2 = false -> boolean = false"
+  },
+  {
+    "program_name": "Boolean to String Conversion",
+    "description": "Converts boolean to String using String.valueOf()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., BooleanToString.java).\nCompile: javac BooleanToString.java\nRun: java BooleanToString",
+    "code": "public class BooleanToString {\n    public static void main(String[] args) {\n        boolean status = true;\n        String s = String.valueOf(status);\n\n        System.out.println(\"boolean = \" + status);\n        System.out.println(\"String = \" + s);\n    }\n}",
+    "output": "boolean = true\nString = true"
+  },
+  {
+    "program_name": "Wrapper Class Boxing (AutoBoxing)",
+    "description": "Demonstrates autoboxing: converting primitive to wrapper class object automatically",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AutoBoxingDemo.java).\nCompile: javac AutoBoxingDemo.java\nRun: java AutoBoxingDemo",
+    "code": "public class AutoBoxingDemo {\n    public static void main(String[] args) {\n        int a = 100;\n        Integer obj = a;\n\n        System.out.println(\"primitive int = \" + a);\n        System.out.println(\"Wrapper Integer object = \" + obj);\n    }\n}",
+    "output": "primitive int = 100\nWrapper Integer object = 100"
+  },
+  {
+    "program_name": "Wrapper Class Unboxing (AutoUnboxing)",
+    "description": "Demonstrates unboxing: converting wrapper class object to primitive automatically",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AutoUnboxingDemo.java).\nCompile: javac AutoUnboxingDemo.java\nRun: java AutoUnboxingDemo",
+    "code": "public class AutoUnboxingDemo {\n    public static void main(String[] args) {\n        Integer obj = 200;\n        int a = obj;\n\n        System.out.println(\"Wrapper Integer object = \" + obj);\n        System.out.println(\"primitive int = \" + a);\n    }\n}",
+    "output": "Wrapper Integer object = 200\nprimitive int = 200"
+  },
+  {
+    "program_name": "String to Integer (Using valueOf)",
+    "description": "Converts String to Integer wrapper using Integer.valueOf()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToIntegerValueOf.java).\nCompile: javac StringToIntegerValueOf.java\nRun: java StringToIntegerValueOf",
+    "code": "public class StringToIntegerValueOf {\n    public static void main(String[] args) {\n        String s = \"500\";\n        Integer obj = Integer.valueOf(s);\n\n        System.out.println(\"String = \" + s);\n        System.out.println(\"Integer object = \" + obj);\n        System.out.println(\"Integer object + 100 = \" + (obj + 100));\n    }\n}",
+    "output": "String = 500\nInteger object = 500\nInteger object + 100 = 600"
+  },
+  {
+    "program_name": "Integer to Double Conversion",
+    "description": "Converts int to double explicitly and implicitly",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToDoubleDemo.java).\nCompile: javac IntToDoubleDemo.java\nRun: java IntToDoubleDemo",
+    "code": "public class IntToDoubleDemo {\n    public static void main(String[] args) {\n        int a = 25;\n        double b1 = a;\n        double b2 = (double) a;\n\n        System.out.println(\"int = \" + a);\n        System.out.println(\"double (implicit) = \" + b1);\n        System.out.println(\"double (explicit) = \" + b2);\n    }\n}",
+    "output": "int = 25\ndouble (implicit) = 25.0\ndouble (explicit) = 25.0"
+  },
+  {
+    "program_name": "Double to Integer Rounding vs Casting",
+    "description": "Shows difference between type casting and rounding methods (Math.round)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., RoundingVsCasting.java).\nCompile: javac RoundingVsCasting.java\nRun: java RoundingVsCasting",
+    "code": "public class RoundingVsCasting {\n    public static void main(String[] args) {\n        double num = 12.9;\n\n        int casted = (int) num;\n        long rounded = Math.round(num);\n\n        System.out.println(\"Original double = \" + num);\n        System.out.println(\"After casting (int) = \" + casted);\n        System.out.println(\"After rounding (Math.round) = \" + rounded);\n    }\n}",
+    "output": "Original double = 12.9\nAfter casting (int) = 12\nAfter rounding (Math.round) = 13"
+  },
+  {
+    "program_name": "String Concatenation vs Numeric Addition",
+    "description": "Shows difference between adding numbers and concatenating strings",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringConcatVsAddition.java).\nCompile: javac StringConcatVsAddition.java\nRun: java StringConcatVsAddition",
+    "code": "public class StringConcatVsAddition {\n    public static void main(String[] args) {\n        int a = 10;\n        int b = 20;\n\n        System.out.println(\"a + b = \" + (a + b));\n        System.out.println(\"a + b as String = \" + a + b);\n    }\n}",
+    "output": "a + b = 30\na + b as String = 1020"
+  },
+  {
+    "program_name": "Convert String Number to int and Add",
+    "description": "Takes numeric string, converts to int and performs addition",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringNumberAdd.java).\nCompile: javac StringNumberAdd.java\nRun: java StringNumberAdd",
+    "code": "public class StringNumberAdd {\n    public static void main(String[] args) {\n        String s1 = \"50\";\n        String s2 = \"70\";\n\n        int a = Integer.parseInt(s1);\n        int b = Integer.parseInt(s2);\n\n        System.out.println(\"Sum = \" + (a + b));\n    }\n}",
+    "output": "Sum = 120"
+  },
+  {
+    "program_name": "Convert int to char (ASCII Code to Character)",
+    "description": "Converts ASCII/Unicode value to corresponding character using casting",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., AsciiToChar.java).\nCompile: javac AsciiToChar.java\nRun: java AsciiToChar",
+    "code": "public class AsciiToChar {\n    public static void main(String[] args) {\n        int ascii = 97;\n        char ch = (char) ascii;\n\n        System.out.println(\"ASCII value = \" + ascii);\n        System.out.println(\"Character = \" + ch);\n    }\n}",
+    "output": "ASCII value = 97\nCharacter = a"
+  },
+  {
+    "program_name": "Scanner Input + Type Conversion (String to int)",
+    "description": "Takes input as String using Scanner then converts into int",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ScannerStringToInt.java).\nCompile: javac ScannerStringToInt.java\nRun: java ScannerStringToInt",
+    "code": "import java.util.Scanner;\n\npublic class ScannerStringToInt {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a number (as String): \");\n        String s = sc.nextLine();\n\n        int num = Integer.parseInt(s);\n        System.out.println(\"Converted int = \" + num);\n        System.out.println(\"int + 10 = \" + (num + 10));\n\n        sc.close();\n    }\n}",
+    "output": "Enter a number (as String): 90\nConverted int = 90\nint + 10 = 100"
+  },
+  {
+    "program_name": "Scanner Input + Type Conversion (String to double)",
+    "description": "Takes input as String and converts into double using Double.parseDouble()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ScannerStringToDouble.java).\nCompile: javac ScannerStringToDouble.java\nRun: java ScannerStringToDouble",
+    "code": "import java.util.Scanner;\n\npublic class ScannerStringToDouble {\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n\n        System.out.print(\"Enter a decimal number (as String): \");\n        String s = sc.nextLine();\n\n        double num = Double.parseDouble(s);\n        System.out.println(\"Converted double = \" + num);\n\n        sc.close();\n    }\n}",
+    "output": "Enter a decimal number (as String): 12.50\nConverted double = 12.5"
+  },
+  {
+    "program_name": "Convert String to char[] (toCharArray)",
+    "description": "Converts String into character array using toCharArray()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StringToCharArray.java).\nCompile: javac StringToCharArray.java\nRun: java StringToCharArray",
+    "code": "public class StringToCharArray {\n    public static void main(String[] args) {\n        String s = \"Java\";\n        char[] arr = s.toCharArray();\n\n        System.out.println(\"String = \" + s);\n        System.out.print(\"char array = \");\n\n        for (char ch : arr) {\n            System.out.print(ch + \" \");\n        }\n    }\n}",
+    "output": "String = Java\nchar array = J a v a"
+  },
+  {
+    "program_name": "Convert char[] to String",
+    "description": "Converts character array to String using new String(char[])",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CharArrayToString.java).\nCompile: javac CharArrayToString.java\nRun: java CharArrayToString",
+    "code": "public class CharArrayToString {\n    public static void main(String[] args) {\n        char[] arr = {'H', 'e', 'l', 'l', 'o'};\n        String s = new String(arr);\n\n        System.out.println(\"char array converted to String = \" + s);\n    }\n}",
+    "output": "char array converted to String = Hello"
+  },
+  {
+    "program_name": "Convert int to Binary String",
+    "description": "Converts integer to binary string using Integer.toBinaryString()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToBinary.java).\nCompile: javac IntToBinary.java\nRun: java IntToBinary",
+    "code": "public class IntToBinary {\n    public static void main(String[] args) {\n        int num = 25;\n        String binary = Integer.toBinaryString(num);\n\n        System.out.println(\"Number = \" + num);\n        System.out.println(\"Binary = \" + binary);\n    }\n}",
+    "output": "Number = 25\nBinary = 11001"
+  },
+  {
+    "program_name": "Convert Binary String to Integer",
+    "description": "Converts binary string to integer using Integer.parseInt(binary, 2)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., BinaryToInt.java).\nCompile: javac BinaryToInt.java\nRun: java BinaryToInt",
+    "code": "public class BinaryToInt {\n    public static void main(String[] args) {\n        String binary = \"11001\";\n        int num = Integer.parseInt(binary, 2);\n\n        System.out.println(\"Binary = \" + binary);\n        System.out.println(\"Integer = \" + num);\n    }\n}",
+    "output": "Binary = 11001\nInteger = 25"
+  },
+  {
+    "program_name": "Convert int to Hex String",
+    "description": "Converts integer to hexadecimal using Integer.toHexString()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToHex.java).\nCompile: javac IntToHex.java\nRun: java IntToHex",
+    "code": "public class IntToHex {\n    public static void main(String[] args) {\n        int num = 255;\n        String hex = Integer.toHexString(num);\n\n        System.out.println(\"Number = \" + num);\n        System.out.println(\"Hex = \" + hex);\n    }\n}",
+    "output": "Number = 255\nHex = ff"
+  },
+  {
+    "program_name": "Convert Hex String to Integer",
+    "description": "Converts hexadecimal string into integer using Integer.parseInt(hex, 16)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., HexToInt.java).\nCompile: javac HexToInt.java\nRun: java HexToInt",
+    "code": "public class HexToInt {\n    public static void main(String[] args) {\n        String hex = \"ff\";\n        int num = Integer.parseInt(hex, 16);\n\n        System.out.println(\"Hex = \" + hex);\n        System.out.println(\"Integer = \" + num);\n    }\n}",
+    "output": "Hex = ff\nInteger = 255"
+  },
+  {
+    "program_name": "Convert int to Octal String",
+    "description": "Converts integer to octal using Integer.toOctalString()",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., IntToOctal.java).\nCompile: javac IntToOctal.java\nRun: java IntToOctal",
+    "code": "public class IntToOctal {\n    public static void main(String[] args) {\n        int num = 64;\n        String octal = Integer.toOctalString(num);\n\n        System.out.println(\"Number = \" + num);\n        System.out.println(\"Octal = \" + octal);\n    }\n}",
+    "output": "Number = 64\nOctal = 100"
+  },
+  {
+    "program_name": "Convert Octal String to Integer",
+    "description": "Converts octal string into integer using Integer.parseInt(octal, 8)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., OctalToInt.java).\nCompile: javac OctalToInt.java\nRun: java OctalToInt",
+    "code": "public class OctalToInt {\n    public static void main(String[] args) {\n        String octal = \"100\";\n        int num = Integer.parseInt(octal, 8);\n\n        System.out.println(\"Octal = \" + octal);\n        System.out.println(\"Integer = \" + num);\n    }\n}",
+    "output": "Octal = 100\nInteger = 64"
+  }
+]
