@@ -1,0 +1,140 @@
+[
+  {
+    "program_name": "Check Positive Number",
+    "description": "Topic: If Statement | Checks whether a number is positive using simple if",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckPositiveNumber.java).\nCompile: javac CheckPositiveNumber.java\nRun: java CheckPositiveNumber\n\nLogic / How Program Works:\n- Store a number.\n- If number > 0 then print \"Positive Number\".\n- Otherwise nothing prints because only if is used.",
+    "code": "public class CheckPositiveNumber {\n    public static void main(String[] args) {\n        int num = 12;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num > 0) {\n            System.out.println(\"Positive Number\");\n        }\n    }\n}",
+    "output": "Number = 12\nPositive Number"
+  },
+  {
+    "program_name": "Check Even Number",
+    "description": "Topic: If Statement | Checks whether a number is even using if",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckEvenNumber.java).\nCompile: javac CheckEvenNumber.java\nRun: java CheckEvenNumber\n\nLogic / How Program Works:\n- Store a number.\n- If num % 2 == 0, number is even.\n- Print even message.",
+    "code": "public class CheckEvenNumber {\n    public static void main(String[] args) {\n        int num = 24;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num % 2 == 0) {\n            System.out.println(\"Even Number\");\n        }\n    }\n}",
+    "output": "Number = 24\nEven Number"
+  },
+  {
+    "program_name": "Check Multiple of 10",
+    "description": "Topic: If Statement | Checks if a number is divisible by 10",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckMultipleOf10.java).\nCompile: javac CheckMultipleOf10.java\nRun: java CheckMultipleOf10\n\nLogic / How Program Works:\n- Store a number.\n- If num % 10 == 0 then it is divisible by 10.\n- Print the result.",
+    "code": "public class CheckMultipleOf10 {\n    public static void main(String[] args) {\n        int num = 50;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num % 10 == 0) {\n            System.out.println(\"Divisible by 10\");\n        }\n    }\n}",
+    "output": "Number = 50\nDivisible by 10"
+  },
+  {
+    "program_name": "Check Number is Zero",
+    "description": "Topic: If Statement | Checks if the number is exactly zero",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckZero.java).\nCompile: javac CheckZero.java\nRun: java CheckZero\n\nLogic / How Program Works:\n- Store a number.\n- If num == 0 then print \"Zero\".\n- Otherwise nothing prints.",
+    "code": "public class CheckZero {\n    public static void main(String[] args) {\n        int num = 0;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num == 0) {\n            System.out.println(\"Number is Zero\");\n        }\n    }\n}",
+    "output": "Number = 0\nNumber is Zero"
+  },
+
+  {
+    "program_name": "Even or Odd Checker",
+    "description": "Topic: If-Else | Checks whether a number is even or odd",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., EvenOddChecker.java).\nCompile: javac EvenOddChecker.java\nRun: java EvenOddChecker\n\nLogic / How Program Works:\n- If num % 2 == 0 then it's even.\n- Else it's odd.\n- Prints the correct result.",
+    "code": "public class EvenOddChecker {\n    public static void main(String[] args) {\n        int num = 15;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num % 2 == 0) {\n            System.out.println(\"Even\");\n        } else {\n            System.out.println(\"Odd\");\n        }\n    }\n}",
+    "output": "Number = 15\nOdd"
+  },
+  {
+    "program_name": "Positive or Negative Checker",
+    "description": "Topic: If-Else | Checks whether a number is positive or negative",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PositiveNegativeChecker.java).\nCompile: javac PositiveNegativeChecker.java\nRun: java PositiveNegativeChecker\n\nLogic / How Program Works:\n- If num >= 0 then number is positive.\n- Else number is negative.\n- Prints the result.",
+    "code": "public class PositiveNegativeChecker {\n    public static void main(String[] args) {\n        int num = -9;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num >= 0) {\n            System.out.println(\"Positive\");\n        } else {\n            System.out.println(\"Negative\");\n        }\n    }\n}",
+    "output": "Number = -9\nNegative"
+  },
+  {
+    "program_name": "Voter Eligibility Checker",
+    "description": "Topic: If-Else | Checks whether a person is eligible to vote",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., VoterEligibilityChecker.java).\nCompile: javac VoterEligibilityChecker.java\nRun: java VoterEligibilityChecker\n\nLogic / How Program Works:\n- Store age.\n- If age >= 18 then eligible.\n- Else not eligible.\n- Prints eligibility message.",
+    "code": "public class VoterEligibilityChecker {\n    public static void main(String[] args) {\n        int age = 17;\n\n        System.out.println(\"Age = \" + age);\n\n        if (age >= 18) {\n            System.out.println(\"Eligible to Vote\");\n        } else {\n            System.out.println(\"Not Eligible to Vote\");\n        }\n    }\n}",
+    "output": "Age = 17\nNot Eligible to Vote"
+  },
+  {
+    "program_name": "Pass or Fail Checker",
+    "description": "Topic: If-Else | Checks whether student is pass or fail based on marks",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PassFailChecker.java).\nCompile: javac PassFailChecker.java\nRun: java PassFailChecker\n\nLogic / How Program Works:\n- Store marks.\n- If marks >= 33 then pass.\n- Else fail.\n- Prints the result.",
+    "code": "public class PassFailChecker {\n    public static void main(String[] args) {\n        int marks = 28;\n\n        System.out.println(\"Marks = \" + marks);\n\n        if (marks >= 33) {\n            System.out.println(\"Pass\");\n        } else {\n            System.out.println(\"Fail\");\n        }\n    }\n}",
+    "output": "Marks = 28\nFail"
+  },
+
+  {
+    "program_name": "Grade Calculator",
+    "description": "Topic: Else-If Ladder | Calculates grade based on marks",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., GradeCalculator.java).\nCompile: javac GradeCalculator.java\nRun: java GradeCalculator\n\nLogic / How Program Works:\n- Store marks.\n- Use else-if ladder to check ranges.\n- First matching condition prints the grade.\n- If marks are low then prints Fail.",
+    "code": "public class GradeCalculator {\n    public static void main(String[] args) {\n        int marks = 82;\n\n        System.out.println(\"Marks = \" + marks);\n\n        if (marks >= 90) {\n            System.out.println(\"Grade: A+\");\n        } else if (marks >= 80) {\n            System.out.println(\"Grade: A\");\n        } else if (marks >= 70) {\n            System.out.println(\"Grade: B\");\n        } else if (marks >= 60) {\n            System.out.println(\"Grade: C\");\n        } else if (marks >= 33) {\n            System.out.println(\"Grade: D\");\n        } else {\n            System.out.println(\"Grade: Fail\");\n        }\n    }\n}",
+    "output": "Marks = 82\nGrade: A"
+  },
+  {
+    "program_name": "Greatest of Three Numbers",
+    "description": "Topic: Else-If Ladder | Finds the greatest among three numbers",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., GreatestOfThreeNumbers.java).\nCompile: javac GreatestOfThreeNumbers.java\nRun: java GreatestOfThreeNumbers\n\nLogic / How Program Works:\n- Compare a, b, and c.\n- Use else-if to find the biggest value.\n- Print the greatest number.",
+    "code": "public class GreatestOfThreeNumbers {\n    public static void main(String[] args) {\n        int a = 25, b = 40, c = 15;\n\n        System.out.println(\"a = \" + a);\n        System.out.println(\"b = \" + b);\n        System.out.println(\"c = \" + c);\n\n        if (a > b && a > c) {\n            System.out.println(\"Greatest = \" + a);\n        } else if (b > a && b > c) {\n            System.out.println(\"Greatest = \" + b);\n        } else {\n            System.out.println(\"Greatest = \" + c);\n        }\n    }\n}",
+    "output": "a = 25\nb = 40\nc = 15\nGreatest = 40"
+  },
+  {
+    "program_name": "Check Character Type (Vowel or Consonant)",
+    "description": "Topic: Else-If Ladder | Checks whether a character is vowel or consonant",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., VowelConsonantChecker.java).\nCompile: javac VowelConsonantChecker.java\nRun: java VowelConsonantChecker\n\nLogic / How Program Works:\n- Store a character.\n- Check if it matches a,e,i,o,u (both cases).\n- If yes -> vowel.\n- Else -> consonant.",
+    "code": "public class VowelConsonantChecker {\n    public static void main(String[] args) {\n        char ch = 'E';\n\n        System.out.println(\"Character = \" + ch);\n\n        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||\n            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {\n            System.out.println(\"Vowel\");\n        } else {\n            System.out.println(\"Consonant\");\n        }\n    }\n}",
+    "output": "Character = E\nVowel"
+  },
+  {
+    "program_name": "Simple Salary Bonus System",
+    "description": "Topic: Else-If Ladder | Adds bonus based on employee salary range",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SalaryBonusSystem.java).\nCompile: javac SalaryBonusSystem.java\nRun: java SalaryBonusSystem\n\nLogic / How Program Works:\n- Store salary.\n- If salary >= 50000 -> 20% bonus.\n- Else if salary >= 30000 -> 10% bonus.\n- Else -> 5% bonus.\n- Print final salary with bonus.",
+    "code": "public class SalaryBonusSystem {\n    public static void main(String[] args) {\n        double salary = 32000;\n        double bonus;\n\n        if (salary >= 50000) {\n            bonus = salary * 0.20;\n        } else if (salary >= 30000) {\n            bonus = salary * 0.10;\n        } else {\n            bonus = salary * 0.05;\n        }\n\n        System.out.println(\"Salary = \" + salary);\n        System.out.println(\"Bonus = \" + bonus);\n        System.out.println(\"Total Salary = \" + (salary + bonus));\n    }\n}",
+    "output": "Salary = 32000.0\nBonus = 3200.0\nTotal Salary = 35200.0"
+  },
+
+  {
+    "program_name": "Simple Login System",
+    "description": "Topic: Nested If | Checks username and password using nested if",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SimpleLoginSystem.java).\nCompile: javac SimpleLoginSystem.java\nRun: java SimpleLoginSystem\n\nLogic / How Program Works:\n- First checks username.\n- If username is correct, then checks password in nested if.\n- If both match -> Login Successful.\n- Otherwise prints error message.",
+    "code": "public class SimpleLoginSystem {\n    public static void main(String[] args) {\n        String username = \"admin\";\n        String password = \"1234\";\n\n        if (username.equals(\"admin\")) {\n            if (password.equals(\"1234\")) {\n                System.out.println(\"Login Successful\");\n            } else {\n                System.out.println(\"Wrong Password\");\n            }\n        } else {\n            System.out.println(\"Wrong Username\");\n        }\n    }\n}",
+    "output": "Login Successful"
+  },
+  {
+    "program_name": "Divisible by 2 and 3 Checker",
+    "description": "Topic: Nested If | Checks whether a number is divisible by both 2 and 3",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DivisibleBy2And3Checker.java).\nCompile: javac DivisibleBy2And3Checker.java\nRun: java DivisibleBy2And3Checker\n\nLogic / How Program Works:\n- First check if number is divisible by 2.\n- If true, then check divisibility by 3 inside nested if.\n- Prints result based on conditions.",
+    "code": "public class DivisibleBy2And3Checker {\n    public static void main(String[] args) {\n        int num = 12;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num % 2 == 0) {\n            if (num % 3 == 0) {\n                System.out.println(\"Divisible by 2 and 3\");\n            } else {\n                System.out.println(\"Divisible by 2 but not by 3\");\n            }\n        } else {\n            System.out.println(\"Not divisible by 2\");\n        }\n    }\n}",
+    "output": "Number = 12\nDivisible by 2 and 3"
+  },
+
+  {
+    "program_name": "Day Name Finder",
+    "description": "Topic: Switch Case | Prints day name based on day number (1-7)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DayNameFinder.java).\nCompile: javac DayNameFinder.java\nRun: java DayNameFinder\n\nLogic / How Program Works:\n- Store day number.\n- Switch checks which case matches.\n- That case prints day name.\n- break stops further execution.\n- default handles invalid input.",
+    "code": "public class DayNameFinder {\n    public static void main(String[] args) {\n        int day = 5;\n\n        switch (day) {\n            case 1:\n                System.out.println(\"Monday\");\n                break;\n            case 2:\n                System.out.println(\"Tuesday\");\n                break;\n            case 3:\n                System.out.println(\"Wednesday\");\n                break;\n            case 4:\n                System.out.println(\"Thursday\");\n                break;\n            case 5:\n                System.out.println(\"Friday\");\n                break;\n            case 6:\n                System.out.println(\"Saturday\");\n                break;\n            case 7:\n                System.out.println(\"Sunday\");\n                break;\n            default:\n                System.out.println(\"Invalid Day Number\");\n        }\n    }\n}",
+    "output": "Friday"
+  },
+  {
+    "program_name": "Simple Calculator Using Switch",
+    "description": "Topic: Switch Case | Performs +, -, *, / operation using switch",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SimpleCalculatorUsingSwitch.java).\nCompile: javac SimpleCalculatorUsingSwitch.java\nRun: java SimpleCalculatorUsingSwitch\n\nLogic / How Program Works:\n- Store two numbers and operator.\n- Switch matches operator.\n- Performs the operation and prints result.\n- default handles wrong operator.",
+    "code": "public class SimpleCalculatorUsingSwitch {\n    public static void main(String[] args) {\n        int a = 15;\n        int b = 3;\n        char op = '*';\n\n        switch (op) {\n            case '+':\n                System.out.println(\"Result = \" + (a + b));\n                break;\n            case '-':\n                System.out.println(\"Result = \" + (a - b));\n                break;\n            case '*':\n                System.out.println(\"Result = \" + (a * b));\n                break;\n            case '/':\n                System.out.println(\"Result = \" + (a / b));\n                break;\n            default:\n                System.out.println(\"Invalid Operator\");\n        }\n    }\n}",
+    "output": "Result = 45"
+  },
+
+  {
+    "program_name": "Stop Loop at 5",
+    "description": "Topic: Break Statement | Stops loop execution when value reaches 5",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StopLoopAt5.java).\nCompile: javac StopLoopAt5.java\nRun: java StopLoopAt5\n\nLogic / How Program Works:\n- Loop runs from 1 to 10.\n- When i == 5, break exits loop completely.\n- Prints numbers only before 5.",
+    "code": "public class StopLoopAt5 {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 10; i++) {\n            if (i == 5) {\n                break;\n            }\n            System.out.println(i);\n        }\n    }\n}",
+    "output": "1\n2\n3\n4"
+  },
+  {
+    "program_name": "Skip Number 5 in Loop",
+    "description": "Topic: Continue Statement | Skips printing number 5 using continue",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SkipNumber5InLoop.java).\nCompile: javac SkipNumber5InLoop.java\nRun: java SkipNumber5InLoop\n\nLogic / How Program Works:\n- Loop runs from 1 to 10.\n- When i == 5, continue skips this iteration.\n- Prints all numbers except 5.",
+    "code": "public class SkipNumber5InLoop {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 10; i++) {\n            if (i == 5) {\n                continue;\n            }\n            System.out.println(i);\n        }\n    }\n}",
+    "output": "1\n2\n3\n4\n6\n7\n8\n9\n10"
+  },
+  {
+    "program_name": "Print Only Even Numbers (Using Continue)",
+    "description": "Topic: Continue Statement | Prints only even numbers from 1 to 10",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PrintOnlyEvenNumbers.java).\nCompile: javac PrintOnlyEvenNumbers.java\nRun: java PrintOnlyEvenNumbers\n\nLogic / How Program Works:\n- Loop from 1 to 10.\n- If number is odd, continue skips printing.\n- Even numbers will print only.",
+    "code": "public class PrintOnlyEvenNumbers {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 10; i++) {\n            if (i % 2 != 0) {\n                continue;\n            }\n            System.out.println(i);\n        }\n    }\n}",
+    "output": "2\n4\n6\n8\n10"
+  }
+]
