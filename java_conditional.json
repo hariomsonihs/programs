@@ -136,5 +136,117 @@
     "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., PrintOnlyEvenNumbers.java).\nCompile: javac PrintOnlyEvenNumbers.java\nRun: java PrintOnlyEvenNumbers\n\nLogic / How Program Works:\n- Loop from 1 to 10.\n- If number is odd, continue skips printing.\n- Even numbers will print only.",
     "code": "public class PrintOnlyEvenNumbers {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 10; i++) {\n            if (i % 2 != 0) {\n                continue;\n            }\n            System.out.println(i);\n        }\n    }\n}",
     "output": "2\n4\n6\n8\n10"
+  },
+  {
+    "program_name": "Check Leap Year",
+    "description": "Topic: If-Else | Checks whether a year is a leap year or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckLeapYear.java).\nCompile: javac CheckLeapYear.java\nRun: java CheckLeapYear\n\nLogic / How Program Works:\n- A year is leap if (year % 400 == 0) OR (year % 4 == 0 AND year % 100 != 0).\n- If condition is true, print Leap Year.\n- Otherwise print Not a Leap Year.",
+    "code": "public class CheckLeapYear {\n    public static void main(String[] args) {\n        int year = 2024;\n\n        System.out.println(\"Year = \" + year);\n\n        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {\n            System.out.println(\"Leap Year\");\n        } else {\n            System.out.println(\"Not a Leap Year\");\n        }\n    }\n}",
+    "output": "Year = 2024\nLeap Year"
+  },
+  {
+    "program_name": "Check Alphabet (Character Validation)",
+    "description": "Topic: If-Else | Checks if a character is an alphabet letter or not",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckAlphabetCharacter.java).\nCompile: javac CheckAlphabetCharacter.java\nRun: java CheckAlphabetCharacter\n\nLogic / How Program Works:\n- Character is alphabet if it lies between 'A'-'Z' or 'a'-'z'.\n- If true print Alphabet.\n- Else print Not an Alphabet.",
+    "code": "public class CheckAlphabetCharacter {\n    public static void main(String[] args) {\n        char ch = '#';\n\n        System.out.println(\"Character = \" + ch);\n\n        if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {\n            System.out.println(\"Alphabet\");\n        } else {\n            System.out.println(\"Not an Alphabet\");\n        }\n    }\n}",
+    "output": "Character = #\nNot an Alphabet"
+  },
+  {
+    "program_name": "Check Uppercase or Lowercase",
+    "description": "Topic: If-Else | Checks if a character is uppercase or lowercase",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckUpperLowerCase.java).\nCompile: javac CheckUpperLowerCase.java\nRun: java CheckUpperLowerCase\n\nLogic / How Program Works:\n- If character is between 'A' and 'Z' -> Uppercase.\n- Else if between 'a' and 'z' -> Lowercase.\n- Otherwise it is not an alphabet character.",
+    "code": "public class CheckUpperLowerCase {\n    public static void main(String[] args) {\n        char ch = 'h';\n\n        System.out.println(\"Character = \" + ch);\n\n        if (ch >= 'A' && ch <= 'Z') {\n            System.out.println(\"Uppercase Letter\");\n        } else if (ch >= 'a' && ch <= 'z') {\n            System.out.println(\"Lowercase Letter\");\n        } else {\n            System.out.println(\"Not an Alphabet Character\");\n        }\n    }\n}",
+    "output": "Character = h\nLowercase Letter"
+  },
+  {
+    "program_name": "Check Number is Divisible by 5 and 11",
+    "description": "Topic: If-Else | Checks divisibility of a number by 5 and 11",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DivisibleBy5And11.java).\nCompile: javac DivisibleBy5And11.java\nRun: java DivisibleBy5And11\n\nLogic / How Program Works:\n- If num % 5 == 0 AND num % 11 == 0 then divisible by both.\n- Else not divisible by both.\n- Print result accordingly.",
+    "code": "public class DivisibleBy5And11 {\n    public static void main(String[] args) {\n        int num = 55;\n\n        System.out.println(\"Number = \" + num);\n\n        if (num % 5 == 0 && num % 11 == 0) {\n            System.out.println(\"Divisible by 5 and 11\");\n        } else {\n            System.out.println(\"Not Divisible by 5 and 11\");\n        }\n    }\n}",
+    "output": "Number = 55\nDivisible by 5 and 11"
+  },
+  {
+    "program_name": "Check Profit or Loss",
+    "description": "Topic: If-Else | Calculates profit or loss based on cost price and selling price",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ProfitLossCalculator.java).\nCompile: javac ProfitLossCalculator.java\nRun: java ProfitLossCalculator\n\nLogic / How Program Works:\n- If sellingPrice > costPrice -> Profit.\n- Else if sellingPrice < costPrice -> Loss.\n- Else -> No Profit No Loss.\n- Print the result and difference.",
+    "code": "public class ProfitLossCalculator {\n    public static void main(String[] args) {\n        int costPrice = 500;\n        int sellingPrice = 650;\n\n        System.out.println(\"Cost Price = \" + costPrice);\n        System.out.println(\"Selling Price = \" + sellingPrice);\n\n        if (sellingPrice > costPrice) {\n            System.out.println(\"Profit = \" + (sellingPrice - costPrice));\n        } else if (sellingPrice < costPrice) {\n            System.out.println(\"Loss = \" + (costPrice - sellingPrice));\n        } else {\n            System.out.println(\"No Profit No Loss\");\n        }\n    }\n}",
+    "output": "Cost Price = 500\nSelling Price = 650\nProfit = 150"
+  },
+  {
+    "program_name": "Electricity Bill Calculator",
+    "description": "Topic: Else-If Ladder | Calculates electricity bill based on units consumed",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., ElectricityBillCalculator.java).\nCompile: javac ElectricityBillCalculator.java\nRun: java ElectricityBillCalculator\n\nLogic / How Program Works:\n- If units <= 100 -> rate 1.5 per unit.\n- Else if units <= 200 -> rate 2.5 per unit.\n- Else if units <= 300 -> rate 3.5 per unit.\n- Else -> rate 5 per unit.\n- Multiply units with rate and print bill amount.",
+    "code": "public class ElectricityBillCalculator {\n    public static void main(String[] args) {\n        int units = 250;\n        double rate;\n\n        System.out.println(\"Units = \" + units);\n\n        if (units <= 100) {\n            rate = 1.5;\n        } else if (units <= 200) {\n            rate = 2.5;\n        } else if (units <= 300) {\n            rate = 3.5;\n        } else {\n            rate = 5.0;\n        }\n\n        double bill = units * rate;\n        System.out.println(\"Bill Amount = \" + bill);\n    }\n}",
+    "output": "Units = 250\nBill Amount = 875.0"
+  },
+  {
+    "program_name": "Discount Calculator",
+    "description": "Topic: Else-If Ladder | Applies discount based on shopping amount",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., DiscountCalculator.java).\nCompile: javac DiscountCalculator.java\nRun: java DiscountCalculator\n\nLogic / How Program Works:\n- If amount >= 5000 -> 20% discount.\n- Else if amount >= 3000 -> 15% discount.\n- Else if amount >= 1000 -> 10% discount.\n- Else -> no discount.\n- Final amount = amount - discount.",
+    "code": "public class DiscountCalculator {\n    public static void main(String[] args) {\n        double amount = 3500;\n        double discount;\n\n        System.out.println(\"Total Amount = \" + amount);\n\n        if (amount >= 5000) {\n            discount = amount * 0.20;\n        } else if (amount >= 3000) {\n            discount = amount * 0.15;\n        } else if (amount >= 1000) {\n            discount = amount * 0.10;\n        } else {\n            discount = 0;\n        }\n\n        System.out.println(\"Discount = \" + discount);\n        System.out.println(\"Final Payable Amount = \" + (amount - discount));\n    }\n}",
+    "output": "Total Amount = 3500.0\nDiscount = 525.0\nFinal Payable Amount = 2975.0"
+  },
+  {
+    "program_name": "Simple ATM Menu System",
+    "description": "Topic: Switch Case | Performs ATM operations like check balance, deposit, withdraw",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SimpleATMMenu.java).\nCompile: javac SimpleATMMenu.java\nRun: java SimpleATMMenu\n\nLogic / How Program Works:\n- Store initial balance.\n- Use a choice variable for menu selection.\n- Switch executes selected operation.\n- For withdraw, check if balance is sufficient before deducting.",
+    "code": "public class SimpleATMMenu {\n    public static void main(String[] args) {\n        int balance = 5000;\n        int choice = 2; // 1=Check Balance, 2=Deposit, 3=Withdraw\n        int amount = 2000;\n\n        System.out.println(\"Current Balance = \" + balance);\n\n        switch (choice) {\n            case 1:\n                System.out.println(\"Balance = \" + balance);\n                break;\n            case 2:\n                balance = balance + amount;\n                System.out.println(\"Deposited = \" + amount);\n                System.out.println(\"Updated Balance = \" + balance);\n                break;\n            case 3:\n                if (amount <= balance) {\n                    balance = balance - amount;\n                    System.out.println(\"Withdrawn = \" + amount);\n                    System.out.println(\"Updated Balance = \" + balance);\n                } else {\n                    System.out.println(\"Insufficient Balance\");\n                }\n                break;\n            default:\n                System.out.println(\"Invalid Choice\");\n        }\n    }\n}",
+    "output": "Current Balance = 5000\nDeposited = 2000\nUpdated Balance = 7000"
+  },
+  {
+    "program_name": "Month Name Finder",
+    "description": "Topic: Switch Case | Prints month name based on month number (1-12)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., MonthNameFinder.java).\nCompile: javac MonthNameFinder.java\nRun: java MonthNameFinder\n\nLogic / How Program Works:\n- Store month number.\n- Switch checks matching month case.\n- Prints the month name.\n- default handles invalid month number.",
+    "code": "public class MonthNameFinder {\n    public static void main(String[] args) {\n        int month = 11;\n\n        switch (month) {\n            case 1:\n                System.out.println(\"January\");\n                break;\n            case 2:\n                System.out.println(\"February\");\n                break;\n            case 3:\n                System.out.println(\"March\");\n                break;\n            case 4:\n                System.out.println(\"April\");\n                break;\n            case 5:\n                System.out.println(\"May\");\n                break;\n            case 6:\n                System.out.println(\"June\");\n                break;\n            case 7:\n                System.out.println(\"July\");\n                break;\n            case 8:\n                System.out.println(\"August\");\n                break;\n            case 9:\n                System.out.println(\"September\");\n                break;\n            case 10:\n                System.out.println(\"October\");\n                break;\n            case 11:\n                System.out.println(\"November\");\n                break;\n            case 12:\n                System.out.println(\"December\");\n                break;\n            default:\n                System.out.println(\"Invalid Month Number\");\n        }\n    }\n}",
+    "output": "November"
+  },
+  {
+    "program_name": "Traffic Signal System",
+    "description": "Topic: Switch Case | Prints action based on traffic light color using switch",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., TrafficSignalSystem.java).\nCompile: javac TrafficSignalSystem.java\nRun: java TrafficSignalSystem\n\nLogic / How Program Works:\n- Store a string for signal color.\n- Switch checks the color.\n- Prints action like STOP, READY, GO.\n- default handles invalid input.",
+    "code": "public class TrafficSignalSystem {\n    public static void main(String[] args) {\n        String signal = \"Green\";\n\n        switch (signal) {\n            case \"Red\":\n                System.out.println(\"STOP\");\n                break;\n            case \"Yellow\":\n                System.out.println(\"READY\");\n                break;\n            case \"Green\":\n                System.out.println(\"GO\");\n                break;\n            default:\n                System.out.println(\"Invalid Signal\");\n        }\n    }\n}",
+    "output": "GO"
+  },
+  {
+    "program_name": "Stop Loop When Sum Exceeds 50",
+    "description": "Topic: Break Statement | Adds numbers until sum exceeds 50 and stops using break",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., StopSumExceeds50.java).\nCompile: javac StopSumExceeds50.java\nRun: java StopSumExceeds50\n\nLogic / How Program Works:\n- Loop runs from 1 to 100.\n- Add i to sum each time.\n- When sum > 50, break stops the loop.\n- Prints final sum and where it stopped.",
+    "code": "public class StopSumExceeds50 {\n    public static void main(String[] args) {\n        int sum = 0;\n\n        for (int i = 1; i <= 100; i++) {\n            sum += i;\n\n            if (sum > 50) {\n                System.out.println(\"Stopped at i = \" + i);\n                break;\n            }\n        }\n\n        System.out.println(\"Final Sum = \" + sum);\n    }\n}",
+    "output": "Stopped at i = 10\nFinal Sum = 55"
+  },
+  {
+    "program_name": "Skip Negative Numbers",
+    "description": "Topic: Continue Statement | Skips negative numbers and prints only positives",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SkipNegativeNumbers.java).\nCompile: javac SkipNegativeNumbers.java\nRun: java SkipNegativeNumbers\n\nLogic / How Program Works:\n- Array contains positive and negative numbers.\n- If number < 0, continue skips that number.\n- Prints only positive numbers.",
+    "code": "public class SkipNegativeNumbers {\n    public static void main(String[] args) {\n        int[] arr = {5, -2, 10, -7, 20};\n\n        for (int num : arr) {\n            if (num < 0) {\n                continue;\n            }\n            System.out.println(num);\n        }\n    }\n}",
+    "output": "5\n10\n20"
+  },
+  {
+    "program_name": "Skip Multiples of 3",
+    "description": "Topic: Continue Statement | Skips numbers divisible by 3 between 1 to 20",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., SkipMultiplesOf3.java).\nCompile: javac SkipMultiplesOf3.java\nRun: java SkipMultiplesOf3\n\nLogic / How Program Works:\n- Loop from 1 to 20.\n- If i % 3 == 0, continue skips printing.\n- Prints only numbers not divisible by 3.",
+    "code": "public class SkipMultiplesOf3 {\n    public static void main(String[] args) {\n        for (int i = 1; i <= 20; i++) {\n            if (i % 3 == 0) {\n                continue;\n            }\n            System.out.println(i);\n        }\n    }\n}",
+    "output": "1\n2\n4\n5\n7\n8\n10\n11\n13\n14\n16\n17\n19\n20"
+  },
+  {
+    "program_name": "Check Valid Triangle",
+    "description": "Topic: If-Else | Checks if three angles form a valid triangle",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckValidTriangle.java).\nCompile: javac CheckValidTriangle.java\nRun: java CheckValidTriangle\n\nLogic / How Program Works:\n- A triangle is valid if sum of angles is exactly 180.\n- If true print Valid Triangle.\n- Else print Invalid Triangle.",
+    "code": "public class CheckValidTriangle {\n    public static void main(String[] args) {\n        int a = 60, b = 60, c = 60;\n\n        System.out.println(\"Angles: \" + a + \", \" + b + \", \" + c);\n\n        if (a + b + c == 180) {\n            System.out.println(\"Valid Triangle\");\n        } else {\n            System.out.println(\"Invalid Triangle\");\n        }\n    }\n}",
+    "output": "Angles: 60, 60, 60\nValid Triangle"
+  },
+  {
+    "program_name": "Check Valid Triangle by Sides",
+    "description": "Topic: If-Else | Checks if three sides form a valid triangle",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., CheckTriangleBySides.java).\nCompile: javac CheckTriangleBySides.java\nRun: java CheckTriangleBySides\n\nLogic / How Program Works:\n- Triangle is valid if sum of any two sides is greater than the third.\n- Check all three conditions.\n- If true -> Valid Triangle else Invalid Triangle.",
+    "code": "public class CheckTriangleBySides {\n    public static void main(String[] args) {\n        int a = 5, b = 7, c = 10;\n\n        System.out.println(\"Sides: \" + a + \", \" + b + \", \" + c);\n\n        if (a + b > c && a + c > b && b + c > a) {\n            System.out.println(\"Valid Triangle\");\n        } else {\n            System.out.println(\"Invalid Triangle\");\n        }\n    }\n}",
+    "output": "Sides: 5, 7, 10\nValid Triangle"
+  },
+  {
+    "program_name": "Triangle Type Checker",
+    "description": "Topic: Else-If Ladder | Identifies triangle type (Equilateral/Isosceles/Scalene)",
+    "instruction": "How to Run:\nSave: File name must match the Class Name (e.g., TriangleTypeChecker.java).\nCompile: javac TriangleTypeChecker.java\nRun: java TriangleTypeChecker\n\nLogic / How Program Works:\n- If all sides equal -> Equilateral.\n- Else if any two sides equal -> Isosceles.\n- Else -> Scalene.\n- Prints the triangle type.",
+    "code": "public class TriangleTypeChecker {\n    public static void main(String[] args) {\n        int a = 6, b = 6, c = 6;\n\n        System.out.println(\"Sides: \" + a + \", \" + b + \", \" + c);\n\n        if (a == b && b == c) {\n            System.out.println(\"Equilateral Triangle\");\n        } else if (a == b || b == c || a == c) {\n            System.out.println(\"Isosceles Triangle\");\n        } else {\n            System.out.println(\"Scalene Triangle\");\n        }\n    }\n}",
+    "output": "Sides: 6, 6, 6\nEquilateral Triangle"
   }
 ]
